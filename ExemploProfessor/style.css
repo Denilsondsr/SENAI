@@ -1,0 +1,24 @@
+.box {
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  background-color: lightblue;
+  border: 2px solid #333;
+  text-align: center;
+  line-height: 100px;
+}
+
+.inline {
+  display: inline;
+  background-color: lightgreen;
+}
+
+.block {
+  display: block;
+  background-color: lightcoral;
+}
+
+.inline-block {
+  display: inline-block;
+  background-color: lightgoldenrodyellow;
+}
