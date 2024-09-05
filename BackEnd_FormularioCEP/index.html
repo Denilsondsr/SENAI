@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet">
-  <title>Formulário CEP automático</title>
-</head>
-<body>
-  <header>
-    <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Formulário CEP automático</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+      <h1 class="textoCentro">Preencha o formulário</h1>
+    </header>
+    <h2 class="textoCentro">Coloque seus dados e tenha o Endereço completo</h2>
+    <div class="container-auto">
+      <form class="elemento-auto">
+        <label for="nome" class="elemento-auto">Nome:</label>
+        <input type="text" id="nome" name="nome" class="elemento-auto" required />
+        <br />
 
-    </nav>
-    <h1 class="textoCentro">
-      Preencha o formulário
-    </h1>
-  </header>
-  <h2 class="textoCentro">
-    Coloque seus dados e tenha o Endereço completo
-  </h2>
-  <form>
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="cep">CEP:</label>
-    <input type="text" id="cep" name="cep" required>
-
-    <label for="logradouro">Logradouro:</label>
-    <input type="text" id="logradouro" name="logradouro">
-
-    <label for="bairro">Bairro:</label>
-    <input type="text" id="bairro" name="bairro">
-
-    <label for="cidade">Cidade:</label>
-    <input type="text" id="cidade" name="cidade">
-
-    <label for="estado">Estado:</label>
-    <input type="text" id="estado" name="estado">
-
-    <button type="submit">Consultar</button>
-  </form>
-</body>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required />
+        <br />
+        <br />
+        <button type="submit">Consultar</button>
+        <br />
+        <br />
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" name="logradouro" />
+        <br />
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" />
+        <br />
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" />
+        <br />
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" />
+      </form>
+    </div>
+  </body>
 </html>
