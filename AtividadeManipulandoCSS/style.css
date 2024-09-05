@@ -1,17 +1,16 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
-header{
-    background-color: blue;
-    text-align: center;
+header {
+  background-color: green;
+  text-align: center;
 }
-nav{
-    background-color: black;
-
+nav {
+  background-color: black;
 }
-.inline{
-    display: inline;
-    color: pink;
+.inline {
+  display: inline;
+  color: pink;
 }
