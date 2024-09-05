@@ -1,0 +1,51 @@
+body {
+  background-color: aqua;
+}
+header {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  border: 5px;
+}
+nav {
+  background-color: rgb(13, 82, 220);
+  text-align: center;
+  padding: 10px;
+}
+a {
+  color: white;
+  padding: 100px;
+  margin: 0;
+}
+img {
+  padding-top: 35px;
+  padding-left: 30%;
+
+}
+.teste{
+  font-size: xx-large;
+  color: firebrick;
+}
+
+main {
+  background-color: white;
+  border-radius: 10px;
+  border-color: black;
+  border-style: double;
+}
+footer {
+  background-color: brown;
+  text-align: center;
+  font-size: xx-large;
+}
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: gray;
+}
+input[name="nome"] {
+  background-color: brown;
+}
+input[name="email"] {
+  background-color: green;
+}

@@ -1,0 +1,17 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    background-color: blue;
+    text-align: center;
+}
+nav{
+    background-color: black;
+
+}
+.inline{
+    display: inline;
+    color: pink;
+}
