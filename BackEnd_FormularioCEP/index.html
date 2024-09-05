@@ -3,9 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
   <title>Formulário CEP automático</title>
 </head>
 <body>
-  
+  <header>
+    <nav>
+
+    </nav>
+    <h1>
+      Preencha o formulário
+    </h1>
+  </header>
+  <h2>
+    Coloque seus dados e tenha o Endereço completo
+  </h2>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" name="cep" required>
+
+    <label for="logradouro">Logradouro:</label>
+    <input type="text" id="logradouro" name="logradouro">
+
+    <label for="bairro">Bairro:</label>
+    <input type="text" id="bairro" name="bairro">
+
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade">
+
+    <label for="estado">Estado:</label>
+    <input type="text" id="estado" name="estado">
+
+    <button type="submit">Consultar</button>
+  </form>
 </body>
 </html>
