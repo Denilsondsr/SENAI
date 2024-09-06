@@ -2,22 +2,50 @@
   margin: 0%;
   padding: 0%;
 }
-
+.txCenter {
+  text-align: center;
+}
+.txBranco {
+  color: white;
+}
+p {
+  margin: 10px;
+}
 header {
   background-color: green;
-  text-align: center;
-  padding: 2%;
+  padding: 10px;
+  margin: 10px;
 }
 nav {
+  display: grid;
   background-color: black;
+  height: 40px;
+  padding: 0%;
+  place-items: center;
 }
-.inline {
+li {
   display: inline;
-  color: pink;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.verde {
-  color: green;
+.exemplo-inline {
+  display: inline;
+  margin: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: yellow;
+  border: 2px solid black;
 }
-.branco {
-  color: white;
+.exemplo-block {
+  display: block;
+  background-color: green;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid gray;
+}
+h2 {
+  margin: 10px;
+}
+h3 {
+  margin: 10px;
 }
