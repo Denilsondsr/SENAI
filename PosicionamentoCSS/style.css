@@ -1,0 +1,114 @@
+/* Estilos gerais */
+* {
+  margin: 0; /* Remove a margem padrão de todos os elementos */
+  padding: 0; /* Remove o padding padrão de todos os elementos */
+  box-sizing: ; /* Inclui padding e bordas no cálculo da largura e altura do elemento */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão do corpo da página */
+  line-height: 1.6; /* Define o espaçamento entre linhas para melhorar a legibilidade */
+  padding-top: 60px; /* Adiciona espaço no topo para que o conteúdo não fique atrás do cabeçalho fixo */
+}
+
+h1, h2 {
+  color: #ffffff; /* Define a cor do texto dos títulos como branco */
+}
+
+/* Cabeçalho fixo no topo */
+.header {
+  position: /* Fixa o cabeçalho no topo da página */
+  top: ; /* Posiciona o cabeçalho no topo da página */
+  left: ; /* Alinha o cabeçalho à esquerda */
+  width: ; /* Define a largura do cabeçalho para ocupar 100% da largura da página */
+  background-color: #4; /* Define a cor de fundo do cabeçalho */
+  color: white; /* Define a cor do texto como branco */
+  padding: ; /* Adiciona padding interno ao cabeçalho */
+  text-align: ; /* Centraliza o texto dentro do cabeçalho */
+  z-index: ; /* Garante que o cabeçalho fique acima de outros elementos na página */
+}
+
+/* Menu lateral fixo no lado esquerdo */
+.sidebar {
+  position: ; /* Fixa o menu lateral na página */
+  top: ; /* Posiciona o menu abaixo do cabeçalho fixo */
+  left: ; /* Alinha o menu ao lado esquerdo da página */
+  width: ; /* Define a largura do menu lateral */
+  height: ; /* Define a altura do menu para ocupar toda a altura da página */
+  background-color: #333; /* Define a cor de fundo do menu lateral */
+  color: white; /* Define a cor do texto como branco */
+  padding: ; /* Adiciona padding interno ao menu lateral */
+}
+
+.sidebar nav ul {
+  list-style: ; /* Remove as bolinhas padrão das listas */
+}
+
+.sidebar nav ul li {
+  margin: 20px 0; /* Adiciona espaço acima e abaixo dos itens da lista */
+}
+
+.sidebar nav ul li a {
+  color: white; /* Define a cor do texto dos links como branco */
+  text-decoration: ; /* Remove o sublinhado dos links */
+  font-weight: ; /* Torna o texto dos links em negrito */
+}
+
+/* Adicione o efeito de hover */
+  {
+  color: #ffeb3b; /* Altera a cor do texto dos links ao passar o mouse */
+}
+
+/* Conteúdo principal */
+.content {
+  margin-left: ; /* Adiciona margem à esquerda para compensar a largura do menu lateral */
+  padding: ; /* Adiciona padding interno ao conteúdo principal */
+  position: ; /* Define o posicionamento relativo para o conteúdo */
+}
+
+/* Seção sticky */
+.whatsapp-button {
+  position: ; /* Fixa o botão na página */
+  right: ; /* Define a distância do botão da borda direita */
+  bottom: ; /* Define a distância do botão da borda inferior */
+  padding: ; /* Adiciona padding interno ao botão */
+  z-index:  /* Garante que o botão esteja acima de outros elementos na página */
+}
+
+.whatsapp-button a {
+  display: ; /* Faz com que o link dentro do botão ocupe o bloco inteiro */
+}
+
+/* Botão fixo no canto inferior */
+.action-btn {
+  position: ; /* Posiciona o botão em relação ao contêiner pai */
+  bottom: ; /* Define a distância do botão da borda inferior do contêiner pai */
+  left: ; /* Define a distância do botão da borda esquerda do contêiner pai */
+  background-color: #e74c3c; /* Define a cor de fundo do botão */
+  color: white; /* Define a cor do texto do botão como branco */
+  border: ; /* Remove a borda padrão do botão */
+  padding: ; /* Adiciona padding interno ao botão */
+  border-radius: ; /* Arredonda os cantos do botão */
+  cursor: ; /* Altera o cursor para uma mão ao passar sobre o botão */
+  font-size: ; /* Define o tamanho da fonte do botão, utilize o tamanho padrão dos navegadores */
+  font-weight: ; /* Torna o texto do botão em negrito */
+}
+
+/* Adicione o efeito de hover */
+  {
+  background-color: #c0392b; /* Altera a cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+.footer {
+  text-align: ; /* Centraliza o texto dentro do rodapé */
+  padding: ; /* Adiciona padding interno ao rodapé */
+  background-color: #333; /* Define a cor de fundo do rodapé */
+  color: white; /* Define a cor do texto como branco */
+  margin-top: ; /* Adiciona margem acima do rodapé */
+}
+
+/* Estilo para o conteúdo de rolagem */
+.scroll-content p {
+  margin-bottom: 20px; /* Adiciona espaço abaixo dos parágrafos */
+}
