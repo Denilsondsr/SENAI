@@ -13,3 +13,9 @@ function preencherCampos(dados) {
   document.getElementById("cidade").value = dados.localidade || "";
   document.getElementById("estado").value = dados.uf || "";
 }
+function limparCampos() {
+  document.getElementById("logradouro").value = "";
+  document.getElementById("bairro").value = "";
+  document.getElementById("cidade").value = "";
+  document.getElementById("estado").value = "";
+}
