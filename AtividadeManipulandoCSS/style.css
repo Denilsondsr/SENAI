@@ -6,6 +6,7 @@
 header {
   background-color: green;
   text-align: center;
+  padding: 2%;
 }
 nav {
   background-color: black;
@@ -16,4 +17,7 @@ nav {
 }
 .verde {
   color: green;
+}
+.branco {
+  color: white;
 }
