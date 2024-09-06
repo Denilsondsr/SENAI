@@ -14,18 +14,23 @@
     <h2 class="textoCentro">Coloque seus dados e tenha o Endereço completo</h2>
     <div class="container-auto">
       <form id="form-cep">
-        <label for="nome">Nome:</label>
+        <!-- <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" />
         <br />
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" />
-        <br />
+        <br /> -->
         <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" />
+        <input
+          type="text"
+          id="cep"
+          name="cep"
+          onblur="consultarCEP(cep.value)"
+        />
         <br />
         <br />
-        <button type="submit" onclick="consultarCEP()">Consultar</button>
+        <button type="submit">Consultar</button>
         <br />
         <br />
         <label for="logradouro">Logradouro:</label>
