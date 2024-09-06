@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 02 - Formulário</title>
+  </head>
+  <body>
+    <h1>Formulário de Inscrição</h1>
+    <div>
+      <p>
+        Crie um arquivo HTML com um formulário de inscrição contendo os
+        seguintes campos:
+        <br />1. Nome, que deve ser um input de texto <br />2. Email, que deve
+        ser um input de email <br />3. WhatsApp, que deve ser um input de
+        telefone <br />4. Área de atuação, que deve ser um input de radio com as
+        opções: Desenvolvimento, Quality Assurance (QA), Análise de Dados e
+        Infraestrutura <br />5. Observações, que deve ser uma textarea <br />6.
+        Uma checkbox com o rótulo “Desejo receber novidades e ofertas por
+        email.”
+      </p>
+    </div>
+
+    <div>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <br /><br />
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" />
+
+        <br /><br />
+        <label>Área de Atuação:</label>
+        <br />
+        <input
+          type="radio"
+          id="desenvolvedor"
+          name="atuacao"
+          value="desenvolvedor"
+        />
+        <label for="desenvolvedor">Desenvolvimento</label>
+        <br />
+
+        <input type="radio" id="QA" name="atuacao" value="QA" />
+        <label for="QA">Quality Assurance (QA)</label>
+        <br />
+
+        <input
+          type="radio"
+          id="Ans"
+          name="atuacao"
+          value="Análise de Dados e Infraestrutura"
+        />
+        <label for="Ans">Análise de Dados e Infraestrutura</label>
+        <br /><br />
+
+        <label for="obs">Observações:</label>
+        <textarea
+          name="obs"
+          id="obs"
+          cols="25"
+          rows="4"
+          placeholder="Observação:"
+        ></textarea>
+        <br /><br />
+
+        <input
+          type="checkbox"
+          id="receberEmail"
+          name="receberEmail"
+          value="true"
+        />
+        <label for="receberEmail"
+          >Desejo receber novidades e ofertas por email ?</label
+        >
+        <br /><br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
