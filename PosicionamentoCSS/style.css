@@ -2,50 +2,51 @@
 * {
   margin: 0; /* Remove a margem padrão de todos os elementos */
   padding: 0; /* Remove o padding padrão de todos os elementos */
-  box-sizing: ; /* Inclui padding e bordas no cálculo da largura e altura do elemento */
+  box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura e altura do elemento */
 }
 
 body {
   font-family: Arial, sans-serif; /* Define a fonte padrão do corpo da página */
   line-height: 1.6; /* Define o espaçamento entre linhas para melhorar a legibilidade */
-  padding-top: 60px; /* Adiciona espaço no topo para que o conteúdo não fique atrás do cabeçalho fixo */
+  padding-top: 50px; /* Adiciona espaço no topo para que o conteúdo não fique atrás do cabeçalho fixo */
 }
 
-h1, h2 {
-  color: #ffffff; /* Define a cor do texto dos títulos como branco */
+h1,
+h2 {
+  color: white; /* Define a cor do texto dos títulos como branco */
 }
 
 /* Cabeçalho fixo no topo */
 .header {
-  position: /* Fixa o cabeçalho no topo da página */
-  top: ; /* Posiciona o cabeçalho no topo da página */
-  left: ; /* Alinha o cabeçalho à esquerda */
-  width: ; /* Define a largura do cabeçalho para ocupar 100% da largura da página */
-  background-color: #4; /* Define a cor de fundo do cabeçalho */
+  position: fixed; /* Fixa o cabeçalho no topo da página */
+  top: 0px; /* Posiciona o cabeçalho no topo da página */
+  left: 0px; /* Alinha o cabeçalho à esquerda */
+  width: 100%; /* Define a largura do cabeçalho para ocupar 100% da largura da página */
+  background-color: green; /* Define a cor de fundo do cabeçalho */
   color: white; /* Define a cor do texto como branco */
-  padding: ; /* Adiciona padding interno ao cabeçalho */
-  text-align: ; /* Centraliza o texto dentro do cabeçalho */
-  z-index: ; /* Garante que o cabeçalho fique acima de outros elementos na página */
+  padding: 10px; /* Adiciona padding interno ao cabeçalho */
+  text-align: center; /* Centraliza o texto dentro do cabeçalho */
+  z-index: 1; /* Garante que o cabeçalho fique acima de outros elementos na página */
 }
 
 /* Menu lateral fixo no lado esquerdo */
 .sidebar {
-  position: ; /* Fixa o menu lateral na página */
-  top: ; /* Posiciona o menu abaixo do cabeçalho fixo */
-  left: ; /* Alinha o menu ao lado esquerdo da página */
-  width: ; /* Define a largura do menu lateral */
-  height: ; /* Define a altura do menu para ocupar toda a altura da página */
+  position: fixed; /* Fixa o menu lateral na página */
+  top: 70px; /* Posiciona o menu abaixo do cabeçalho fixo */
+  left: 0px; /* Alinha o menu ao lado esquerdo da página */
+  width: 15%; /* Define a largura do menu lateral */
+  height: 100%; /* Define a altura do menu para ocupar toda a altura da página */
   background-color: #333; /* Define a cor de fundo do menu lateral */
   color: white; /* Define a cor do texto como branco */
-  padding: ; /* Adiciona padding interno ao menu lateral */
+  padding: 10px; /* Adiciona padding interno ao menu lateral */
 }
 
 .sidebar nav ul {
-  list-style: ; /* Remove as bolinhas padrão das listas */
+  list-style: none; /* Remove as bolinhas padrão das listas */
 }
 
 .sidebar nav ul li {
-  margin: 20px 0; /* Adiciona espaço acima e abaixo dos itens da lista */
+  margin: 5px 10px; /* Adiciona espaço acima e abaixo dos itens da lista */
 }
 
 .sidebar nav ul li a {
@@ -55,7 +56,7 @@ h1, h2 {
 }
 
 /* Adicione o efeito de hover */
-  {
+ {
   color: #ffeb3b; /* Altera a cor do texto dos links ao passar o mouse */
 }
 
@@ -72,7 +73,7 @@ h1, h2 {
   right: ; /* Define a distância do botão da borda direita */
   bottom: ; /* Define a distância do botão da borda inferior */
   padding: ; /* Adiciona padding interno ao botão */
-  z-index:  /* Garante que o botão esteja acima de outros elementos na página */
+  z-index: ; /* Garante que o botão esteja acima de outros elementos na página */
 }
 
 .whatsapp-button a {
@@ -95,7 +96,7 @@ h1, h2 {
 }
 
 /* Adicione o efeito de hover */
-  {
+ {
   background-color: #c0392b; /* Altera a cor de fundo do botão ao passar o mouse */
 }
 
