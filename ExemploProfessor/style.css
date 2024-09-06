@@ -1,24 +1,47 @@
-.box {
-  width: 150px;
-  height: 100px;
-  margin: 10px;
-  background-color: lightblue;
-  border: 2px solid #333;
+/* Estilo geral para o elemento centralizado */
+.elemento {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
   text-align: center;
-  line-height: 100px;
+  font-size: 20px;
 }
 
-.inline {
-  display: inline;
-  background-color: lightgreen;
+/* 1. Centralizar Horizontalmente com margin: 0 auto */
+.container-auto {
+  width: 100%;
+}
+.elemento-auto {
+  width: 200px;
+  margin: 0 auto;
 }
 
-.block {
-  display: block;
-  background-color: lightcoral;
+/* 2. Centralizar com Flexbox */
+.container-flex {
+  display: flex;
+  justify-content: center; /* Horizontal */
+  align-items: center; /* Vertical */
+  height: 200px;
+  background-color: #d71616;
 }
 
-.inline-block {
-  display: inline-block;
-  background-color: lightgoldenrodyellow;
+/* 3. Centralizar com Position */
+.container-position {
+  position: relative;
+  height: 200px;
+  background-color: #2e07df;
+}
+.elemento-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 4. Centralizar com Grid */
+.container-grid {
+  display: grid;
+  place-items: center; /* Centraliza horizontal e vertical */
+  height: 200px;
+  background-color: #f1f1f1;
 }
