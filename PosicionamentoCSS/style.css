@@ -34,7 +34,7 @@ h2 {
   position: fixed; /* Fixa o menu lateral na página */
   top: 70px; /* Posiciona o menu abaixo do cabeçalho fixo */
   left: 0px; /* Alinha o menu ao lado esquerdo da página */
-  width: 15%; /* Define a largura do menu lateral */
+  width: 20%; /* Define a largura do menu lateral */
   height: 100%; /* Define a altura do menu para ocupar toda a altura da página */
   background-color: #333; /* Define a cor de fundo do menu lateral */
   color: white; /* Define a cor do texto como branco */
@@ -51,20 +51,20 @@ h2 {
 
 .sidebar nav ul li a {
   color: white; /* Define a cor do texto dos links como branco */
-  text-decoration: ; /* Remove o sublinhado dos links */
-  font-weight: ; /* Torna o texto dos links em negrito */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold; /* Torna o texto dos links em negrito */
 }
 
 /* Adicione o efeito de hover */
- {
+.sidebar nav ul li a:hover {
   color: #ffeb3b; /* Altera a cor do texto dos links ao passar o mouse */
 }
 
 /* Conteúdo principal */
 .content {
-  margin-left: ; /* Adiciona margem à esquerda para compensar a largura do menu lateral */
-  padding: ; /* Adiciona padding interno ao conteúdo principal */
-  position: ; /* Define o posicionamento relativo para o conteúdo */
+  margin-left: 20%; /* Adiciona margem à esquerda para compensar a largura do menu lateral */
+  padding: 1%; /* Adiciona padding interno ao conteúdo principal */
+  position: relative; /* Define o posicionamento relativo para o conteúdo */
 }
 
 /* Seção sticky */
