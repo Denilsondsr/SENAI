@@ -69,44 +69,44 @@ h2 {
 
 /* Seção sticky */
 .whatsapp-button {
-  position: ; /* Fixa o botão na página */
-  right: ; /* Define a distância do botão da borda direita */
-  bottom: ; /* Define a distância do botão da borda inferior */
-  padding: ; /* Adiciona padding interno ao botão */
-  z-index: ; /* Garante que o botão esteja acima de outros elementos na página */
+  position: fixed; /* Fixa o botão na página */
+  right: 10px; /* Define a distância do botão da borda direita */
+  bottom: 10px; /* Define a distância do botão da borda inferior */
+  padding: 10px; /* Adiciona padding interno ao botão */
+  z-index: 1; /* Garante que o botão esteja acima de outros elementos na página */
 }
 
 .whatsapp-button a {
-  display: ; /* Faz com que o link dentro do botão ocupe o bloco inteiro */
+  display: block; /* Faz com que o link dentro do botão ocupe o bloco inteiro */
 }
 
 /* Botão fixo no canto inferior */
 .action-btn {
-  position: ; /* Posiciona o botão em relação ao contêiner pai */
-  bottom: ; /* Define a distância do botão da borda inferior do contêiner pai */
-  left: ; /* Define a distância do botão da borda esquerda do contêiner pai */
+  position: absolute; /* Posiciona o botão em relação ao contêiner pai */
+  bottom: 10px; /* Define a distância do botão da borda inferior do contêiner pai */
+  left: 10px; /* Define a distância do botão da borda esquerda do contêiner pai */
   background-color: #e74c3c; /* Define a cor de fundo do botão */
   color: white; /* Define a cor do texto do botão como branco */
-  border: ; /* Remove a borda padrão do botão */
-  padding: ; /* Adiciona padding interno ao botão */
-  border-radius: ; /* Arredonda os cantos do botão */
-  cursor: ; /* Altera o cursor para uma mão ao passar sobre o botão */
-  font-size: ; /* Define o tamanho da fonte do botão, utilize o tamanho padrão dos navegadores */
-  font-weight: ; /* Torna o texto do botão em negrito */
+  border: none; /* Remove a borda padrão do botão */
+  padding: 1%; /* Adiciona padding interno ao botão */
+  border-radius: 10%; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+  font-size: large; /* Define o tamanho da fonte do botão, utilize o tamanho padrão dos navegadores */
+  font-weight: bold; /* Torna o texto do botão em negrito */
 }
 
 /* Adicione o efeito de hover */
- {
+.action-btn:hover {
   background-color: #c0392b; /* Altera a cor de fundo do botão ao passar o mouse */
 }
 
 /* Estilos para o rodapé */
 .footer {
-  text-align: ; /* Centraliza o texto dentro do rodapé */
-  padding: ; /* Adiciona padding interno ao rodapé */
+  text-align: center; /* Centraliza o texto dentro do rodapé */
+  padding: 10px; /* Adiciona padding interno ao rodapé */
   background-color: #333; /* Define a cor de fundo do rodapé */
   color: white; /* Define a cor do texto como branco */
-  margin-top: ; /* Adiciona margem acima do rodapé */
+  margin-top: 100%; /* Adiciona margem acima do rodapé */
 }
 
 /* Estilo para o conteúdo de rolagem */
