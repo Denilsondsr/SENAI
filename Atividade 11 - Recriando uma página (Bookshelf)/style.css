@@ -1,15 +1,15 @@
 * {
-  font-family:;
+  font-family:Poppins;
   margin: 0;
   padding: 0;
 }
 
 /* Estilo para a logo */
 .logo {
-  width:; 
-  position:; 
-  top:;
-  left:;
+  width: 100px;; 
+  position: fixed; 
+  top: 10px;
+  left: 10px;;
 }
 
 header {
