@@ -6,96 +6,100 @@
 
 /* Estilo para a logo */
 .logo {
-  width: 100px;; 
-  position: fixed; 
+  width: 130px;; 
+  position: absolute; 
   top: 10px;
   left: 10px;;
 }
 
 header {
-  border-bottom:;
-  font-size:;
-  padding:;
-  text-align:;
-  position:;
+  border-bottom: 1px solid black;
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
+  position: static;
 }
 
 /* Barra de pesquisa */
 .search-form {
-  position: ;
-  top: ;
-  right: ; /* Posiciona no canto superior direito */
+  display: inline-flex;
+  position: absolute ;
+  top: 20px ;
+  right: 20px ; /* Posiciona no canto superior direito */
 }
 
 .search-input {
-  padding: ;
-  border: ;
-  border-radius:;
-  font-size:;
+  padding: 5px 5px 5px 10px;
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 15px 0px 0px 15px;
+  font-size: 12px;
+  margin-right: 0px;
 }
 
 .search-button {
-  padding: ;
-  background-color: ;
-  color: ;
-  border: ;
-  border-radius: ;
-  cursor: ;
-  font-size: ;
-  text-transform: ;
+  padding: 5px 10px;
+  background-color: rgb(0, 179, 255) ;
+  color: white ;
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 0px 15px 15px 0px;
+  cursor: pointer ;
+  font-size: 12px;
+  text-transform: uppercase ;
+  margin-left: 0px;
 }
 
 .search-button:hover {
-  background-color: ;
+  background-color: rgb(19, 125, 171);
 }
 
-
 h1, h2 {
-  font-family:;
-  font-weight: ;
+  font-family:Poppins;
+  font-weight: 300;
 }
 
 h1 {
-  font-size: ;
-  margin-bottom: ;
+  font-size: 4rem;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size:;
-  margin-bottom: ;
+  font-size: 2rem;
+  margin-bottom: 10px ;
 }
 
 .feature, .catalog, .cta {
-  font-size: ;
-  padding: ;
-  text-align: ;
+  font-size: 1rem;
+  padding: 10px ;
+  text-align: center;
 }
 
 .feature img {
-  width: ;
+  width: 500px ;
 }
 
 .cta-button {
-  background-color: ;
-  border-radius:;
-  color:;
-  display: ;
-  margin: ;
-  padding: ;
-  width: 
-  text-decoration: ;
-  text-transform: ;
-  transition: ;
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+  display: block;
+  margin: 10px auto ;
+  padding: 10px ;
+  width: 150px;
+  text-decoration: none ;
+  text-transform: uppercase;
+  transition: 0.3s;
+  position: relative;
+  cursor: pointer;
 }
 
 .cta-button:hover {
-  background-color: ;
-  transform:;
+  background-color: gray ;
+  transform:scale(1.1) ;
 }
 
 .genres > li {
-  display: ;
-  margin-top: ;
+  display: inline ;
+  margin-top: 10px ;
 }
 
 .genres > li + li {
