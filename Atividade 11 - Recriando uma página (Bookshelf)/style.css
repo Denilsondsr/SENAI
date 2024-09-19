@@ -1,15 +1,15 @@
 * {
-  font-family:Poppins;
+  font-family: Poppins;
   margin: 0;
   padding: 0;
 }
 
 /* Estilo para a logo */
 .logo {
-  width: 130px;; 
-  position: absolute; 
+  width: 130px;
+  position: absolute;
   top: 10px;
-  left: 10px;;
+  left: 10px;
 }
 
 header {
@@ -23,9 +23,9 @@ header {
 /* Barra de pesquisa */
 .search-form {
   display: inline-flex;
-  position: absolute ;
-  top: 20px ;
-  right: 20px ; /* Posiciona no canto superior direito */
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Posiciona no canto superior direito */
 }
 
 .search-input {
@@ -38,13 +38,13 @@ header {
 
 .search-button {
   padding: 5px 10px;
-  background-color: rgb(0, 179, 255) ;
-  color: white ;
+  background-color: rgb(0, 179, 255);
+  color: white;
   border: 1px solid rgb(188, 188, 188);
   border-radius: 0px 15px 15px 0px;
-  cursor: pointer ;
+  cursor: pointer;
   font-size: 12px;
-  text-transform: uppercase ;
+  text-transform: uppercase;
   margin-left: 0px;
 }
 
@@ -52,8 +52,9 @@ header {
   background-color: rgb(19, 125, 171);
 }
 
-h1, h2 {
-  font-family:Poppins;
+h1,
+h2 {
+  font-family: Poppins;
   font-weight: 300;
 }
 
@@ -64,17 +65,23 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 10px ;
+  margin-bottom: 10px;
 }
 
-.feature, .catalog, .cta {
+p {
+  margin-bottom: 25px;
+}
+
+.feature,
+.catalog,
+.cta {
   font-size: 1rem;
-  padding: 10px ;
+  padding: 10px;
   text-align: center;
 }
 
 .feature img {
-  width: 500px ;
+  width: 500px;
 }
 
 .cta-button {
@@ -82,10 +89,10 @@ h2 {
   border-radius: 15px;
   color: white;
   display: block;
-  margin: 10px auto ;
-  padding: 10px ;
+  margin: 10px auto;
+  padding: 10px;
   width: 150px;
-  text-decoration: none ;
+  text-decoration: none;
   text-transform: uppercase;
   transition: 0.3s;
   position: relative;
@@ -93,13 +100,13 @@ h2 {
 }
 
 .cta-button:hover {
-  background-color: gray ;
-  transform:scale(1.1) ;
+  background-color: gray;
+  transform: scale(1.1);
 }
 
 .genres > li {
-  display: inline ;
-  margin-top: 10px ;
+  display: inline;
+  margin-top: 10px;
 }
 
 .genres > li + li {
@@ -114,17 +121,17 @@ h2 {
   color: ;
   display: ;
   padding: ;
-  text-decoration:;
+  text-decoration: ;
   transition: ;
 }
 
 .genre > a:hover {
-  background-color:;
+  background-color: ;
   transform: ;
 }
 
 .see-more > a {
-  background-color:;
+  background-color: ;
   text-transform: ;
 }
 
@@ -135,8 +142,8 @@ h2 {
 
 footer {
   background-color: ;
-  color:;
+  color: ;
   font-family: ;
-  padding:;
-  text-align:;
+  padding: ;
+  text-align: ;
 }
