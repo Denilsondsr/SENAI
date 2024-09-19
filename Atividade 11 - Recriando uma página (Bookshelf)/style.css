@@ -1,19 +1,138 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+  font-family:;
+  margin: 0;
+  padding: 0;
 }
 
-.h1Titulo {
-  text-align: center;
-  width: 200px;
-  margin-left: 45%;
-  margin-top: 0%;
+/* Estilo para a logo */
+.logo {
+  width:; 
+  position:; 
+  top:;
+  left:;
 }
 
-.header a img {
-  width: 100px;
-  padding: 5px;
-  margin-left: 5px;
-  margin-top: 5px;
+header {
+  border-bottom:;
+  font-size:;
+  padding:;
+  text-align:;
+  position:;
+}
+
+/* Barra de pesquisa */
+.search-form {
+  position: ;
+  top: ;
+  right: ; /* Posiciona no canto superior direito */
+}
+
+.search-input {
+  padding: ;
+  border: ;
+  border-radius:;
+  font-size:;
+}
+
+.search-button {
+  padding: ;
+  background-color: ;
+  color: ;
+  border: ;
+  border-radius: ;
+  cursor: ;
+  font-size: ;
+  text-transform: ;
+}
+
+.search-button:hover {
+  background-color: ;
+}
+
+
+h1, h2 {
+  font-family:;
+  font-weight: ;
+}
+
+h1 {
+  font-size: ;
+  margin-bottom: ;
+}
+
+h2 {
+  font-size:;
+  margin-bottom: ;
+}
+
+.feature, .catalog, .cta {
+  font-size: ;
+  padding: ;
+  text-align: ;
+}
+
+.feature img {
+  width: ;
+}
+
+.cta-button {
+  background-color: ;
+  border-radius:;
+  color:;
+  display: ;
+  margin: ;
+  padding: ;
+  width: 
+  text-decoration: ;
+  text-transform: ;
+  transition: ;
+}
+
+.cta-button:hover {
+  background-color: ;
+  transform:;
+}
+
+.genres > li {
+  display: ;
+  margin-top: ;
+}
+
+.genres > li + li {
+  margin-left: ;
+  margin-top: ;
+}
+
+.genre > a,
+.see-more > a {
+  background-color: ;
+  border-radius: ;
+  color: ;
+  display: ;
+  padding: ;
+  text-decoration:;
+  transition: ;
+}
+
+.genre > a:hover {
+  background-color:;
+  transform: ;
+}
+
+.see-more > a {
+  background-color:;
+  text-transform: ;
+}
+
+.see-more > a:hover {
+  background-color: ;
+  transform: ;
+}
+
+footer {
+  background-color: ;
+  color:;
+  font-family: ;
+  padding:;
+  text-align:;
 }
