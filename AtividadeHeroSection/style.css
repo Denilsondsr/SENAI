@@ -8,9 +8,9 @@
 
 /* Define variáveis CSS para cores que podem ser usadas em todo o documento */
 :root {
-  --color-background: ; /* Cor de fundo padrão */
-  --color-white: ; /* Cor branca */
-  --color-blue: ; /* Cor azul */
+  --color-background: rgb(52, 126, 126); /* Cor de fundo padrão */
+  --color-white: white; /* Cor branca */
+  --color-blue: blue; /* Cor azul */
 }
 
 /* Estilo do corpo da página */
@@ -27,84 +27,84 @@ a {
 /* Estilo da seção principal "hero" */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.1), var(--color-background)); /* Aplica um gradiente de fundo com uma leve sobreposição preta */
-  position: ; /* Define a posição relativa para que os elementos posicionados dentro dela sejam posicionados em relação a este container */
-  min-height: ; /* Define a altura mínima da seção para 100% da altura da viewport */
+  position:relative ; /* Define a posição relativa para que os elementos posicionados dentro dela sejam posicionados em relação a este container */
+  min-height: 100vh ; /* Define a altura mínima da seção para 100% da altura da viewport */
 }
 
 /* Estilo do vídeo de fundo na seção "hero" */
 .hero__background {
-  object-fit: ; /* Faz com que o vídeo cubra todo o container, mantendo a proporção */
-  position: ; /* Posiciona o vídeo absolutamente em relação ao elemento pai */
-  top: ; /* Alinha o vídeo ao topo do container */
-  height: ; /* Define a altura do vídeo como 100% da altura da viewport */
-  width: ; /* Define a largura do vídeo como 100% do container */
-  z-index: ; /* Coloca o vídeo atrás de outros elementos com z-index maior */
+  object-fit: cover; /* Faz com que o vídeo cubra todo o container, mantendo a proporção */
+  position: absolute; /* Posiciona o vídeo absolutamente em relação ao elemento pai */
+  top: 0px ; /* Alinha o vídeo ao topo do container */
+  height: 100vh ; /* Define a altura do vídeo como 100% da altura da viewport */
+  width: 99.1vw; /* Define a largura do vídeo como 100% do container */
+  z-index: -1 ; /* Coloca o vídeo atrás de outros elementos com z-index maior */
 }
 
 /* Estilo do conteúdo da seção "hero" */
 .hero__foreground {
   color: var(--color-white); /* Define a cor do texto como branca */
-  padding-top: ; /* Adiciona um espaçamento superior de 40% da altura da viewport */
-  text-align: ; /* Centraliza o texto */
+  padding-top: 25% ; /* Adiciona um espaçamento superior de 40% da altura da viewport */
+  text-align: center ; /* Centraliza o texto */
 }
 
 /* Estilo do título da seção "hero" */
 .hero__title {
-  font-size: ; /* Define o tamanho da fonte do título */
-  font-weight: ; /* Define a espessura da fonte como 300 (leve) */
+  font-size: 7rem ; /* Define o tamanho da fonte do título */
+  font-weight: 700 ; /* Define a espessura da fonte como 300 (leve) */
 }
 
 /* Estilo do texto da seção "hero" */
 .hero__text {
-  margin-top: ; /* Adiciona margem superior ao texto */
-  letter-spacing: ; /* Define o espaçamento entre as letras */
-  text-transform: ; /* Transforma o texto para letras maiúsculas */
+  margin-top: 10px ; /* Adiciona margem superior ao texto */
+  letter-spacing: 15px ; /* Define o espaçamento entre as letras */
+  text-transform: uppercase ; /* Transforma o texto para letras maiúsculas */
 }
 
 /* Estilo das seções gerais */
 .section {
-  overflow: ; /* Oculta o conteúdo que ultrapassa os limites do container */
-  padding: ; /* Adiciona padding horizontal de 8rem ao container */
-  text-align: ; /* Centraliza o texto */
+  overflow:hidden ; /* Oculta o conteúdo que ultrapassa os limites do container */
+  padding: 2rem 8rem ; /* Adiciona padding horizontal de 8rem ao container */
+  text-align: center ; /* Centraliza o texto */
 }
 
 /* Estilo do título das seções */
 .section__title {
-  font-size: ; /* Define o tamanho da fonte do título */
-  font-weight: ; /* Define a espessura da fonte como 300 (leve) */
-  margin: ; /* Adiciona margem vertical de 4rem e centraliza o título horizontalmente */
+  font-size: 5rem ; /* Define o tamanho da fonte do título */
+  font-weight: 400 ; /* Define a espessura da fonte como 300 (leve) */
+  margin: 4rem ; /* Adiciona margem vertical de 4rem e centraliza o título horizontalmente */
 }
 
 /* Estilo das imagens dentro das seções */
 .section__img,
 .section__img-inline {
-  border-radius: ; /* Adiciona bordas arredondadas de 0.75rem */
+  border-radius: 1rem; /* Adiciona bordas arredondadas de 0.75rem */
   /* eixo x, eixo y, blur, expansão/recuo, cor */
   box-shadow: 0 1rem 2rem -0.5rem rgba(20, 116, 180, 0.25); /* Adiciona uma sombra com deslocamento, desfoque e cor */
-  object-fit: ; /* Faz a imagem cobrir todo o container, mantendo a proporção */
-  object-position: ; /* Posiciona a imagem no topo do container */
-  position: ; /* Define a posição relativa para permitir o posicionamento absoluto de elementos filhos */
-  max-height: ; /* Define a altura máxima da imagem */
-  width: ; /* Define a largura da imagem como 100% do container */
+  object-fit: cover; /* Faz a imagem cobrir todo o container, mantendo a proporção */
+  object-position: 0px ; /* Posiciona a imagem no topo do container */
+  position: relative ; /* Define a posição relativa para permitir o posicionamento absoluto de elementos filhos */
+  max-height: 100vh ; /* Define a altura máxima da imagem */
+  width: 100% ; /* Define a largura da imagem como 100% do container */
 }
 
 /* Estilo do texto dentro das seções */
 .section__text,
 .section__text-inline {
-  font-size: ; /* Define o tamanho da fonte */
-  line-height: ; /* Define a altura da linha */
-  margin: ; /* Adiciona margem vertical de 4rem e centraliza o texto horizontalmente */
+  font-size: 3rem ; /* Define o tamanho da fonte */
+  line-height: 3rem ; /* Define a altura da linha */
+  margin: 4rem; /* Adiciona margem vertical de 4rem e centraliza o texto horizontalmente */
 }
 
 /* Estilo das imagens inline dentro das seções */
 .section__img-inline {
-  border-top-left-radius: ; /* Adiciona bordas arredondadas de 4rem no canto superior esquerdo */
-  border-bottom-right-radius: ; /* Adiciona bordas arredondadas de 4rem no canto inferior direito */
-  float: ; /* Faz a imagem flutuar à esquerda */
-  margin-right: ; /* Adiciona margem à direita da imagem */
-  margin-bottom: ; /* Adiciona margem inferior */
-  height: ; /* Define a altura da imagem */
-  width: ; /* Define a largura da imagem */
+  border-top-left-radius: 4rem; /* Adiciona bordas arredondadas de 4rem no canto superior esquerdo */
+  border-bottom-right-radius:4rem ; /* Adiciona bordas arredondadas de 4rem no canto inferior direito */
+  float: left ; /* Faz a imagem flutuar à esquerda */
+  margin-right: 1% ; /* Adiciona margem à direita da imagem */
+  margin-bottom: 25%; /* Adiciona margem inferior */
+  height: 55% ; /* Define a altura da imagem */
+  width: 55%; /* Define a largura da imagem */
 }
 
 /* Estilo do texto inline dentro das seções */
