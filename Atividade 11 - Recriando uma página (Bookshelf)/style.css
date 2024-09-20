@@ -8,24 +8,24 @@
 .logo {
   width: 140px;
   position: absolute;
-  top: 20px;
-  left: 50px;
+  top: 1%;
+  left: 2%;
 }
 
 header {
   border-bottom: 1px solid black;
   font-size: 1rem;
-  padding: 10px;
+  padding: 1%;
   text-align: center;
-  position: static;
+  position: relative;
 }
 
 /* Barra de pesquisa */
 .search-form {
   display: inline-flex;
   position: absolute;
-  top: 20px;
-  right: 20px; /* Posiciona no canto superior direito */
+  top: 10%;
+  right: 5%; /* Posiciona no canto superior direito */
 }
 
 .search-input {
@@ -69,7 +69,7 @@ h2 {
 }
 
 p {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .feature,
