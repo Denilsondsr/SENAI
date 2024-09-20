@@ -6,10 +6,10 @@
 
 /* Estilo para a logo */
 .logo {
-  width: 130px;
+  width: 140px;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 50px;
 }
 
 header {
@@ -55,11 +55,11 @@ header {
 h1,
 h2 {
   font-family: Poppins;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 10px;
 }
 
@@ -110,40 +110,40 @@ p {
 }
 
 .genres > li + li {
-  margin-left: ;
-  margin-top: ;
+  margin-left: 50px;
+  margin-top: 5px;
 }
 
 .genre > a,
 .see-more > a {
-  background-color: ;
-  border-radius: ;
-  color: ;
-  display: ;
-  padding: ;
-  text-decoration: ;
-  transition: ;
+  background-color: rgb(19, 125, 171);
+  border-radius: 15px;
+  color: white;
+  display: inline-flex;
+  padding: 15px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .genre > a:hover {
-  background-color: ;
-  transform: ;
+  background-color: gray;
+  transform: scale(0.9);
 }
 
 .see-more > a {
-  background-color: ;
-  text-transform: ;
+  background-color: black;
+  text-transform: uppercase;
 }
 
 .see-more > a:hover {
-  background-color: ;
-  transform: ;
+  background-color: rgb(19, 125, 171);
+  transform: rotate(10deg);
 }
 
 footer {
-  background-color: ;
-  color: ;
-  font-family: ;
-  padding: ;
-  text-align: ;
+  background-color: black;
+  color: white;
+  font-family: Poppins;
+  padding: 30px;
+  text-align: center;
 }
