@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.3rem;
+}
+.containerMenu {
+  background-color: black;
+  min-width: 100vh;
+  min-height: 5vh;
+  display: flex;
+  justify-content: end;
+  padding: 2%;
+  gap: 15px;
+}
+.itensMenu {
+}
+.itensMenu ul {
+  text-decoration: none;
+  list-style: none;
+}
+.itensMenu ul li {
+  display: inline-flex;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 30px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: pink;
+  transform: scale(1.1);
+}
