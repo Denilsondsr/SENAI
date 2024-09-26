@@ -1,111 +1,113 @@
 /* Estilo base com tons escuros */
 body {
-  font-family: ; /* Define a fonte do corpo */
-  margin: ; /* Remove a margem padrão */
-  padding: ; /* Remove o padding padrão */
-  display: ; /* Define o display flex */
-  flex-direction: ; /* Organiza os filhos em coluna */
-  align-items: ; /* Centraliza os itens horizontalmente */
-  background-color: ; /* Fundo escuro */
-  color: ; /* Texto claro */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, Times, serif; /* Define a fonte do corpo */
+  margin: 0px; /* Remove a margem padrão */
+  padding: 0px; /* Remove o padding padrão */
+  display: flex; /* Define o display flex */
+  flex-direction: column; /* Organiza os filhos em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  background-color: rgb(0, 0, 0); /* Fundo escuro */
+  color: white; /* Texto claro */
 }
 
 header {
-  background-color: ; /* Tom mais escuro para o cabeçalho */
-  color: ; /* Azul claro para o texto */
-  padding: ; /* Espaçamento interno */
-  text-align: ; /* Centraliza o texto */
-  width: ; /* Largura total */
+  background-color: rgb(35, 35, 35); /* Tom mais escuro para o cabeçalho */
+  color: cornflowerblue; /* Azul claro para o texto */
+  padding: 1%; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  width: 100vw; /* Largura total */
 }
 
 h1 {
-  margin: ; /* Remove a margem padrão */
+  margin: 0px; /* Remove a margem padrão */
 }
 
 .container {
-  display: ; /* Define o display flex */
-  width: ; /* Define a largura */
-  margin: ; /* Espaçamento vertical */
+  display: flex; /* Define o display flex */
+  width: 100vw; /* Define a largura */
+  margin: 1%; /* Espaçamento vertical */
+  border-radius: 5%;
 }
 
 /* Sidebar em tons escuros */
 .sidebar {
-  flex: ; /* Expande para preencher o espaço disponível - digite 1 e veja */
-  max-width: ; /* Largura máxima da sidebar */
-  background-color: ; /* Fundo escuro */
-  padding: ; /* Espaçamento interno */
-  border-right: ; /* Borda à direita e sólida */
+  flex: 1; /* Expande para preencher o espaço disponível - digite 1 e veja */
+  max-width: 20vw; /* Largura máxima da sidebar */
+  background-color: rgb(35, 35, 35); /* Fundo escuro */
+  padding: 2%; /* Espaçamento interno */
+  border-right: 1px solid green; /* Borda à direita e sólida */
 }
 
 .sidebar h2 {
-  color: ; /* Cor do texto do título da sidebar */
+  margin: 0px;
+  color: cornflowerblue; /* Cor do texto do título da sidebar */
 }
 
 /* Remover bolinhas da lista */
 .sidebar ul {
-  list-style-type: ; /* Remove as bolinhas da lista */
-  padding: ; /* Remove o padding */
-  margin: ; /* Remove a margem */
+  list-style-type: none; /* Remove as bolinhas da lista */
+  padding: 0px; /* Remove o padding */
+  margin: 0px; /* Remove a margem */
 }
 
 .sidebar ul li {
-  margin: ; /* Espaçamento vertical entre os itens */
+  margin: 1%; /* Espaçamento vertical entre os itens */
 }
 
 .sidebar ul li a {
-  color: ; /* Cor dos links */
-  text-decoration: ; /* Remove o sublinhado dos links */
+  color: white; /* Cor dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
 }
 
 .sidebar ul li a:hover {
-  color: ; /* Cor ao passar o mouse */
+  color: palevioletred; /* Cor ao passar o mouse */
 }
 
 /* Conteúdo principal */
 section.content {
-  flex: ; /* Expande para preencher o espaço disponível */
-  display: ; /* Define o display flex */
-  flex-wrap: ; /* Quebra os itens em múltiplas linhas, se necessário */
-  justify-content: ; /* Distribui espaço entre os itens */
-  gap: ; /* Espaçamento entre os itens */
+  flex: 1; /* Expande para preencher o espaço disponível */
+  display: flex; /* Define o display flex */
+  flex-wrap: wrap; /* Quebra os itens em múltiplas linhas, se necessário */
+  justify-content: space-between; /* Distribui espaço entre os itens */
+  gap: 5%; /* Espaçamento entre os itens */
 }
 
 .box {
-  background-color: ; /* Fundo escuro */
-  padding: ; /* Espaçamento interno */
-  border: ; /* Bordas sutis */
-  flex: ; /* flex-grow flex-shrink flex-basis - teste: 1 1 30% */
-  text-align: ; /* Centraliza o texto */
+  background-color: rgb(35, 35, 35); /* Fundo escuro */
+  padding: 1%; /* Espaçamento interno */
+  border: 1px solid green; /* Bordas sutis */
+  flex: 1 1 30%; /* flex-grow flex-shrink flex-basis - teste: 1 1 30% */
+  text-align: center; /* Centraliza o texto */
 }
 
 .box:hover {
-  background-color: ; /* Leve destaque ao passar o mouse */
+  background-color: gray; /* Leve destaque ao passar o mouse */
 }
 
 /* Estilos para o formulário */
 .form-section {
-  width: ; /* Define a largura */
-  margin:  /* Espaçamento vertical */
-  padding:; /* Espaçamento interno */
+  width: 99vw; /* Define a largura */
+  margin: 1%; /* Espaçamento vertical */
+  padding: 3%; /* Espaçamento interno */
   background-color: #1e1e1e; /* Fundo escuro para o formulário */
-  border-radius: ; /* Arredonda as bordas */
-  box-shadow: ; /* Sombra sutil */
+  border-radius: 5%; /* Arredonda as bordas */
+  box-shadow: 0px 15px 30px rgba(244, 4, 4, 0.927); /* Sombra sutil */
 }
 
 .form-section h2 {
-  color: ; /* Cor do título */
+  color: cornflowerblue; /* Cor do título */
 }
 
 .contact-form {
-  display: ; /* Define o display flex */
-  flex-wrap: ; /* Quebra os itens em múltiplas linhas, se necessário */
-  gap: ; /* Espaçamento entre os itens */
+  display: flex; /* Define o display flex */
+  flex-wrap: wrap; /* Quebra os itens em múltiplas linhas, se necessário */
+  gap: 15%; /* Espaçamento entre os itens */
 }
 
 .form-group {
-  flex: ; /* Expande para preencher 45% da largura */
-  display: ; /* Define o display flex */
-  flex-direction: ; /* Organiza os itens em coluna */
+  flex: 1 1 45%; /* Expande para preencher 45% da largura */
+  display: flex; /* Define o display flex */
+  flex-direction: column; /* Organiza os itens em coluna */
 }
 
 .form-group label {
@@ -113,9 +115,9 @@ section.content {
   font-weight: ; /* Define o texto em negrito */
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
-  padding: ; /* Espaçamento interno */
+  padding: 10px; /* Espaçamento interno */
   border: ; /* Borda ao redor dos campos */
   border-radius: ; /* Arredonda as bordas */
   background-color: ; /* Fundo escuro */
@@ -131,11 +133,11 @@ button {
   border: ; /* Remove a borda */
   border-radius: ; /* Arredonda as bordas */
   cursor: ; /* Cursor de ponteiro ao passar o mouse */
-  transition:; /* Transição suave da cor ao passar o mouse */
+  transition: ; /* Transição suave da cor ao passar o mouse */
 }
 
 button:hover {
-  background-color:  /* Cor ao passar o mouse */
+  background-color: ; /* Cor ao passar o mouse */
 }
 
 footer {
@@ -143,7 +145,7 @@ footer {
   color: ; /* Cor do texto */
   padding: ; /* Espaçamento interno */
   text-align: ; /* Centraliza o texto */
-  width:; /* Largura total */
+  width: ; /* Largura total */
 }
 
 /* Responsividade */
@@ -153,4 +155,3 @@ footer {
 /* Media Query para celulares (max-width: 480px) */
 
 /* Media Query para TVs Smart (min-width: 1200px) */
-
