@@ -1,24 +1,35 @@
-.box {
-  width: 150px;
-  height: 100px;
-  margin: 10px;
-  background-color: lightblue;
-  border: 2px solid #333;
-  text-align: center;
-  line-height: 100px;
+/* Estilo base para telas maiores */
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
 }
 
-.inline {
-  display: inline;
-  background-color: lightgreen;
+.menu li {
+  margin: 0 15px;
 }
 
-.block {
-  display: block;
-  background-color: lightcoral;
+.hamburger-menu {
+  display: none;
 }
 
-.inline-block {
-  display: inline-block;
-  background-color: lightgoldenrodyellow;
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Estilo do menu hambúrguer */
+  .hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
 }
