@@ -18,14 +18,8 @@ header {
 }
 .itensMenu {
 }
-.itensMenu ul {
-  text-decoration: none;
-  list-style: none;
-}
 .itensMenu ul li {
   display: inline-flex;
-  text-decoration: none;
-  list-style: none;
   margin-left: 30px;
 }
 a {
@@ -35,10 +29,25 @@ a {
 a:hover {
   color: pink;
   transform: scale(1.1);
+  background-color: darkgray;
 }
 .containerMaster {
   background-color: gray;
   min-height: 95vh;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.itensMaster {
+  display: flex;
+  border: 2px solid black;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  padding: 15px;
+  justify-items: center;
+  align-items: center;
 }
