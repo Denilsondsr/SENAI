@@ -1,0 +1,156 @@
+/* Estilo base com tons escuros */
+body {
+  font-family: ; /* Define a fonte do corpo */
+  margin: ; /* Remove a margem padrão */
+  padding: ; /* Remove o padding padrão */
+  display: ; /* Define o display flex */
+  flex-direction: ; /* Organiza os filhos em coluna */
+  align-items: ; /* Centraliza os itens horizontalmente */
+  background-color: ; /* Fundo escuro */
+  color: ; /* Texto claro */
+}
+
+header {
+  background-color: ; /* Tom mais escuro para o cabeçalho */
+  color: ; /* Azul claro para o texto */
+  padding: ; /* Espaçamento interno */
+  text-align: ; /* Centraliza o texto */
+  width: ; /* Largura total */
+}
+
+h1 {
+  margin: ; /* Remove a margem padrão */
+}
+
+.container {
+  display: ; /* Define o display flex */
+  width: ; /* Define a largura */
+  margin: ; /* Espaçamento vertical */
+}
+
+/* Sidebar em tons escuros */
+.sidebar {
+  flex: ; /* Expande para preencher o espaço disponível - digite 1 e veja */
+  max-width: ; /* Largura máxima da sidebar */
+  background-color: ; /* Fundo escuro */
+  padding: ; /* Espaçamento interno */
+  border-right: ; /* Borda à direita e sólida */
+}
+
+.sidebar h2 {
+  color: ; /* Cor do texto do título da sidebar */
+}
+
+/* Remover bolinhas da lista */
+.sidebar ul {
+  list-style-type: ; /* Remove as bolinhas da lista */
+  padding: ; /* Remove o padding */
+  margin: ; /* Remove a margem */
+}
+
+.sidebar ul li {
+  margin: ; /* Espaçamento vertical entre os itens */
+}
+
+.sidebar ul li a {
+  color: ; /* Cor dos links */
+  text-decoration: ; /* Remove o sublinhado dos links */
+}
+
+.sidebar ul li a:hover {
+  color: ; /* Cor ao passar o mouse */
+}
+
+/* Conteúdo principal */
+section.content {
+  flex: ; /* Expande para preencher o espaço disponível */
+  display: ; /* Define o display flex */
+  flex-wrap: ; /* Quebra os itens em múltiplas linhas, se necessário */
+  justify-content: ; /* Distribui espaço entre os itens */
+  gap: ; /* Espaçamento entre os itens */
+}
+
+.box {
+  background-color: ; /* Fundo escuro */
+  padding: ; /* Espaçamento interno */
+  border: ; /* Bordas sutis */
+  flex: ; /* flex-grow flex-shrink flex-basis - teste: 1 1 30% */
+  text-align: ; /* Centraliza o texto */
+}
+
+.box:hover {
+  background-color: ; /* Leve destaque ao passar o mouse */
+}
+
+/* Estilos para o formulário */
+.form-section {
+  width: ; /* Define a largura */
+  margin:  /* Espaçamento vertical */
+  padding:; /* Espaçamento interno */
+  background-color: #1e1e1e; /* Fundo escuro para o formulário */
+  border-radius: ; /* Arredonda as bordas */
+  box-shadow: ; /* Sombra sutil */
+}
+
+.form-section h2 {
+  color: ; /* Cor do título */
+}
+
+.contact-form {
+  display: ; /* Define o display flex */
+  flex-wrap: ; /* Quebra os itens em múltiplas linhas, se necessário */
+  gap: ; /* Espaçamento entre os itens */
+}
+
+.form-group {
+  flex: ; /* Expande para preencher 45% da largura */
+  display: ; /* Define o display flex */
+  flex-direction: ; /* Organiza os itens em coluna */
+}
+
+.form-group label {
+  margin-bottom: ; /* Espaçamento abaixo do rótulo */
+  font-weight: ; /* Define o texto em negrito */
+}
+
+.form-group input, 
+.form-group textarea {
+  padding: ; /* Espaçamento interno */
+  border: ; /* Borda ao redor dos campos */
+  border-radius: ; /* Arredonda as bordas */
+  background-color: ; /* Fundo escuro */
+  color: ; /* Cor do texto */
+  font-size: ; /* Tamanho da fonte */
+}
+
+button {
+  width: ; /* Largura do botão */
+  padding: ; /* Espaçamento interno */
+  background-color: ; /* Cor de fundo do botão */
+  color: ; /* Cor do texto */
+  border: ; /* Remove a borda */
+  border-radius: ; /* Arredonda as bordas */
+  cursor: ; /* Cursor de ponteiro ao passar o mouse */
+  transition:; /* Transição suave da cor ao passar o mouse */
+}
+
+button:hover {
+  background-color:  /* Cor ao passar o mouse */
+}
+
+footer {
+  background-color: ; /* Fundo do rodapé */
+  color: ; /* Cor do texto */
+  padding: ; /* Espaçamento interno */
+  text-align: ; /* Centraliza o texto */
+  width:; /* Largura total */
+}
+
+/* Responsividade */
+
+/* Media Query para tablets (max-width: 768px) */
+
+/* Media Query para celulares (max-width: 480px) */
+
+/* Media Query para TVs Smart (min-width: 1200px) */
+
