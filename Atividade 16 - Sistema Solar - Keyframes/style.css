@@ -1,65 +1,130 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.universo {
-  width: 100vw;
+:root {
+  --corBorda: rgb(255, 255, 255, 0.3);
+}
+body {
+  background-image: url(https://i.pinimg.com/originals/1a/7d/cc/1a7dcc374628bc21f6ef890463a77eae.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+  overflow: hidden;
+  transition: transform 2000ms;
+  /* background-size: cover; */
 }
-.sol {
-  background-color: yellow;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  top: 300px;
-  left: 50%;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: pulseColor 8s infinite;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vh;
+  transition: transform 2000ms;
 }
-
-@keyframes pulseColor {
+#Sol img {
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+#Mercurio {
+  position: absolute;
+  height: 225px;
+  width: 225px;
+  border: 1px solid var(--corBorda);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Mercurio img {
+  width: 25px;
+  animation: rotMercurio 3.5s linear infinite;
+}
+@keyframes rotMercurio {
+  from {
+    transform: rotate(0deg) translate(111px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(111px) rotate(0deg);
+  }
+}
+#Venus {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border: 1px solid var(--corBorda);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Venus img {
+  width: 45px;
+  animation: rotVenus 4s linear infinite;
+}
+@keyframes rotVenus {
   0% {
-    transform: scale(1);
-    background-color: yellow;
-  }
-  25% {
-    transform: scale(1.1);
-    background-color: orange;
-  }
-  50% {
-    transform: scale(1);
-    background-color: orange;
-  }
-  75% {
-    transform: scale(1.1);
-    background-color: red;
+    transform: rotate(0deg) translate(150px) rotate(0deg);
   }
   100% {
-    transform: scale(1);
-    background-color: yellow;
+    transform: rotate(360deg) translate(150px) rotate(0deg);
   }
 }
-
-.mercurio {
-  background-color: blue;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  top: 240px;
-  left: 55%;
-  border-radius: 50%;
-
-  animation: rotacaoMercurio 0.5s infinite;
+#Terra {
+  position: absolute;
+  height: 750px;
+  width: 750px;
+  border: 1px solid var(--corBorda);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@keyframes rotacaoMercurio {
-  0% {
-    /* Centraliza o quadrado na tela e inicia sua rotação em 0 graus */
-    transform: rotate(0deg) translate(100px) rotate(0deg);
+#Terra img {
+  width: 70px;
+  animation: rotTerra 5.5s linear infinite;
+}
+@keyframes rotTerra {
+  from {
+    transform: rotate(0deg) translate(375px) rotate(0deg);
   }
-  100% {
-    /* Realiza a rotação completa de 360 graus e o movimento circular */
-    transform: rotate(360deg) translate(100px) rotate(360deg);
+
+  to {
+    transform: rotate(360deg) translate(375px) rotate(0deg);
   }
+}
+#Marte {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border: 1px solid var(--corBorda);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Marte img {
+  width: 55px;
+  height: 55px;
+  animation: rotMarte 6.5s linear infinite;
+}
+@keyframes rotMarte {
+  from {
+    transform: rotate(0deg) translate(200px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(200px) rotate(0deg);
+  }
+}
+#Jupter {
+}
+#Saturno {
+}
+#Urano {
+}
+#Netuno {
 }
