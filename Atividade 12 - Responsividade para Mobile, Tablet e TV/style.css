@@ -33,9 +33,9 @@ h1 {
 .sidebar {
   flex: 1; /* Expande para preencher o espaço disponível - digite 1 e veja */
   max-width: 20vw; /* Largura máxima da sidebar */
-  background-color: rgb(35, 35, 35); /* Fundo escuro */
+  background-color: rgb(22, 22, 22); /* Fundo escuro */
   padding: 2%; /* Espaçamento interno */
-  border-right: 1px solid green; /* Borda à direita e sólida */
+  border-right: 1px solid rgb(35, 35, 35); /* Borda à direita e sólida */
 }
 
 .sidebar h2 {
@@ -69,13 +69,13 @@ section.content {
   display: flex; /* Define o display flex */
   flex-wrap: wrap; /* Quebra os itens em múltiplas linhas, se necessário */
   justify-content: space-between; /* Distribui espaço entre os itens */
-  gap: 5%; /* Espaçamento entre os itens */
+  gap: 15px; /* Espaçamento entre os itens */
 }
 
 .box {
   background-color: rgb(35, 35, 35); /* Fundo escuro */
   padding: 1%; /* Espaçamento interno */
-  border: 1px solid green; /* Bordas sutis */
+  border: 1px solid rgb(47, 46, 46); /* Bordas sutis */
   flex: 1 1 30%; /* flex-grow flex-shrink flex-basis - teste: 1 1 30% */
   text-align: center; /* Centraliza o texto */
 }
@@ -89,7 +89,7 @@ section.content {
   width: 99vw; /* Define a largura */
   margin: 1%; /* Espaçamento vertical */
   padding: 3%; /* Espaçamento interno */
-  background-color: #1e1e1e; /* Fundo escuro para o formulário */
+  background-color: rgb(22, 22, 22); /* Fundo escuro para o formulário */
   border-radius: 5%; /* Arredonda as bordas */
   box-shadow: 0px 15px 30px rgba(244, 4, 4, 0.927); /* Sombra sutil */
 }
@@ -111,47 +111,84 @@ section.content {
 }
 
 .form-group label {
-  margin-bottom: ; /* Espaçamento abaixo do rótulo */
-  font-weight: ; /* Define o texto em negrito */
+  margin-bottom: 10px; /* Espaçamento abaixo do rótulo */
+  font-weight: bold; /* Define o texto em negrito */
 }
 
 .form-group input,
 .form-group textarea {
   padding: 10px; /* Espaçamento interno */
-  border: ; /* Borda ao redor dos campos */
-  border-radius: ; /* Arredonda as bordas */
-  background-color: ; /* Fundo escuro */
-  color: ; /* Cor do texto */
-  font-size: ; /* Tamanho da fonte */
+  border: 1px; /* Borda ao redor dos campos */
+  border-radius: 10px; /* Arredonda as bordas */
+  background-color: rgb(35, 35, 35); /* Fundo escuro */
+  color: white; /* Cor do texto */
+  font-size: 1rem; /* Tamanho da fonte */
 }
 
 button {
-  width: ; /* Largura do botão */
-  padding: ; /* Espaçamento interno */
-  background-color: ; /* Cor de fundo do botão */
-  color: ; /* Cor do texto */
-  border: ; /* Remove a borda */
-  border-radius: ; /* Arredonda as bordas */
-  cursor: ; /* Cursor de ponteiro ao passar o mouse */
-  transition: ; /* Transição suave da cor ao passar o mouse */
+  width: 20%; /* Largura do botão */
+  padding: 30px; /* Espaçamento interno */
+  background-color: rgb(100, 175, 237); /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  border: 0px; /* Remove a borda */
+  border-radius: 15px; /* Arredonda as bordas */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: background-color 0.2s; /* Transição suave da cor ao passar o mouse */
 }
 
 button:hover {
-  background-color: ; /* Cor ao passar o mouse */
+  background-color: palevioletred; /* Cor ao passar o mouse */
 }
 
 footer {
-  background-color: ; /* Fundo do rodapé */
-  color: ; /* Cor do texto */
-  padding: ; /* Espaçamento interno */
-  text-align: ; /* Centraliza o texto */
-  width: ; /* Largura total */
+  background-color: rgb(35, 35, 35); /* Fundo do rodapé */
+  color: white; /* Cor do texto */
+  padding: 15px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  width: 100vw; /* Largura total */
 }
 
 /* Responsividade */
 
 /* Media Query para tablets (max-width: 768px) */
 
-/* Media Query para celulares (max-width: 480px) */
+@media (max-width: 768px) {
+  .box {
+    flex: 1 1 100%;
+  }
+  .sidebar {
+    max-width: 30vw;
+  }
+}
 
+/* Media Query para celulares (max-width: 480px) */
+@media (max-width: 480px) {
+  .box {
+    flex: 1 1 100%;
+  }
+  .sidebar {
+    display: none;
+  }
+  button {
+    width: 100%;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+  }
+}
 /* Media Query para TVs Smart (min-width: 1200px) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 2rem;
+  }
+  .container {
+    width: 80%;
+  }
+  .box {
+    flex: 1 1 22%;
+  }
+  button {
+    width: 20%;
+  }
+}
