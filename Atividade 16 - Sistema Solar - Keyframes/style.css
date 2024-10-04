@@ -74,33 +74,10 @@ body {
     transform: rotate(360deg) translate(150px) rotate(0deg);
   }
 }
-#Terra {
-  position: absolute;
-  height: 750px;
-  width: 750px;
-  border: 1px solid var(--corBorda);
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#Terra img {
-  width: 70px;
-  animation: rotTerra 5.5s linear infinite;
-}
-@keyframes rotTerra {
-  from {
-    transform: rotate(0deg) translate(375px) rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg) translate(375px) rotate(0deg);
-  }
-}
 #Marte {
   position: absolute;
-  height: 400px;
-  width: 400px;
+  height: 600px;
+  width: 600px;
   border: 1px solid var(--corBorda);
   border-radius: 100%;
   display: flex;
@@ -114,13 +91,48 @@ body {
 }
 @keyframes rotMarte {
   from {
-    transform: rotate(0deg) translate(200px) rotate(0deg);
+    transform: rotate(0deg) translate(300px) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translate(200px) rotate(0deg);
+    transform: rotate(360deg) translate(300px) rotate(0deg);
+  }
+}
+#Terra {
+  position: absolute;
+  height: 450px;
+  width: 450px;
+  border: 1px solid var(--corBorda);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Terra img {
+  width: 70px;
+  animation: rotTerra 5.5s linear infinite;
+}
+@keyframes rotTerra {
+  from {
+    transform: rotate(0deg) translate(220px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(220px) rotate(0deg);
   }
 }
 #Jupter {
+  position: absolute;
+  height: 750px;
+  width: 750px;
+  border: 1px solid var(--corBorda);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Jupter img {
+  width: 120px;
+  animation: rotJupter 5s linear infinite;
 }
 #Saturno {
 }
