@@ -2,10 +2,13 @@
 
 // Exercício 1: Criando Variáveis Simples
 
-// let nome = "Denilson";
+// Pegando dados via prompt - npm install prompt-sync
+// const prompt = require("prompt-sync")();
+
+// let nome = prompt("Qual é seu nome? ");
 // let idade = 26;
 // let cidade = "São Paulo";
-// console.log(nome);
+// console.log(`Olá, ${nome}!`);
 // console.log(idade);
 // console.log(cidade);
 
