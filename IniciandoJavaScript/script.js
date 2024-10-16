@@ -111,5 +111,98 @@
 // ----------------------------------------
 
 //1.
-let cores = ["Vermelho", "Verde", "Azul"];
-console.log(cores);
+// let cores = ["Vermelho", "Verde", "Azul"];
+// console.log(cores);
+// cores[1] = "Amarelo";
+// console.log(cores);
+// console.log(cores[2]);
+
+//2.
+// let animais = ["Gato", "Cachorro", "Pássaro"];
+// console.log(animais);
+// animais.push("Elefante");
+// console.log(animais);
+// animais.shift();
+// console.log(animais);
+
+//3.
+// let pais = ["Brasil", "Argentina", "Chile", "Uruguai"];
+// console.log(pais);
+// console.log(pais.length);
+
+//4.
+// let numeros = [10, 20, 30, 40, 50];
+// console.log(numeros);
+// console.log(numeros.indexOf(30));
+
+//5.
+// let alimentos = ["Arroz", "Feijão", "Batata", "Macarrão", "Carne"];
+// let novaReceita = alimentos.slice(1, 3);
+// console.log(novaReceita);
+// ----------------------------------------
+
+// JAVASCRIPT - AULA 04 - OBJECTS
+
+// ----------------------------------------
+// ----------------------------------------
+
+// EXERCÍCIO 19
+
+// ----------------------------------------
+//1.
+// let livro = {
+//   titulo: "O Senhor dos Anéis",
+//   autor: "J.R.R. Tolkien",
+//   ano: 1954,
+// };
+// console.log(livro.titulo);
+// console.log(livro.autor);
+
+//2.
+// let carro = {
+//   marca: "Honda",
+//   modelo: "Civic",
+//   ano: 2020,
+// };
+// console.log(carro);
+// carro.ano = 2022;
+// console.log(carro);
+// carro.cor = "Prata";
+// console.log(carro);
+
+//3.
+// let pessoa = {
+//   nome: "Carlos",
+//   idade: 28,
+//   cumprimento: function () {
+//     return `Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`;
+//   },
+// };
+// console.log(pessoa.cumprimento());
+
+//4.
+// let aluno = {
+//   nome: "Mariana",
+//   curso: "Engenharia",
+// };
+
+// if ("idade" in aluno) {
+//   console.log("Contem idade");
+// } else {
+//   console.log("Idade não cadastrada");
+//   aluno.idade = 21;
+//   console.log("Idade cadastrada com sucesso");
+//   console.log(aluno);
+// }
+
+//5.
+// let endereco = {
+//   rua: "Av. Paulista",
+//   numero: 1000,
+//   cidade: {
+//     nome: "São Paulo",
+//     estado: "SP",
+//   },
+// };
+// console.log(endereco.cidade.nome);
+// console.log(endereco.cidade.estado);
