@@ -1,4 +1,12 @@
+// ----------------------------------------
+
 // JAVASCRIPT - AULA 01
+
+// ----------------------------------------
+
+// EXERCÍCIO 16
+
+// ----------------------------------------
 
 // Exercício 1: Criando Variáveis Simples
 
@@ -51,3 +59,43 @@
 // let resultado = `Salario Liquido: R$ ${salarioLiquido.toFixed(2)}`;
 
 // console.log(resultado);
+
+// ----------------------------------------
+
+// JAVASCRIPT - AULA 02 - MANIPULANDO STRINGS
+
+// ----------------------------------------
+// ----------------------------------------
+
+// EXERCÍCIO 17
+
+// ----------------------------------------
+// Pegando dados via prompt - npm install prompt-sync
+
+//1.
+const prompt = require("prompt-sync")();
+// let senha = prompt("Digite sua senha para contarmos:");
+// console.log(senha.length); // Conta a String
+
+// 2.
+// let texto = "Estudar é importante";
+// console.log(texto.indexOf("importante")); // Busca a palavra na Strign
+
+//3.
+// let titulo = "Olá, Mundo!";
+// console.log(titulo);
+// console.log(titulo.replace("Mundo", "Visitante")); // Troca as palavras
+
+//4.
+// let nome = prompt("Digite seu nome: ");
+// console.log(nome);
+
+// console.log(nome.toUpperCase()); // Tudo em MAIÚSCULO
+
+//5.
+// let nomeCompleto = prompt("Digite seu nome completo:");
+// console.log(nomeCompleto);
+
+// let arrayNomeCompleto = nomeCompleto.split(" ");
+
+// console.log(arrayNomeCompleto[0]);
