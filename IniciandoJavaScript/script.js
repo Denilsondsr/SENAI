@@ -73,7 +73,7 @@
 // Pegando dados via prompt - npm install prompt-sync
 
 //1.
-const prompt = require("prompt-sync")();
+// const prompt = require("prompt-sync")();
 // let senha = prompt("Digite sua senha para contarmos:");
 // console.log(senha.length); // Conta a String
 
@@ -99,3 +99,17 @@ const prompt = require("prompt-sync")();
 // let arrayNomeCompleto = nomeCompleto.split(" ");
 
 // console.log(arrayNomeCompleto[0]);
+// ----------------------------------------
+
+// JAVASCRIPT - AULA 03 - ARRAY
+
+// ----------------------------------------
+// ----------------------------------------
+
+// EXERCÍCIO 18
+
+// ----------------------------------------
+
+//1.
+let cores = ["Vermelho", "Verde", "Azul"];
+console.log(cores);
