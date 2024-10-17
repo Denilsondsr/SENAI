@@ -206,3 +206,96 @@
 // };
 // console.log(endereco.cidade.nome);
 // console.log(endereco.cidade.estado);
+// ----------------------------------------
+
+// JAVASCRIPT - AULA 05 - FUNCTIONS
+
+// ----------------------------------------
+// ----------------------------------------
+
+// EXERCÍCIO 20
+
+// ----------------------------------------
+const prompt = require("prompt-sync")();
+//1.
+// function saudar(nome) {
+//   console.log(`Bora treinar ${nome}, Seu Frango!`);
+// }
+// saudar("Denilson");
+
+//2.
+// function multiplicar(repeticoes, kg) {
+//   return repeticoes * kg;
+// }
+// repeticoes = prompt("Digite a quantidade de repetições:");
+// kg = prompt("Digite a carga:");
+
+// console.log(`A carga total é: ${multiplicar(repeticoes, kg)}`);
+
+//3.
+// function contarLetras(senha) {
+//   let contagem = senha.length;
+//   if (contagem < 8) {
+//     console.log(
+//       `A senha tem apenas ${contagem} caracteres, deve ter 8 ou mais`
+//     );
+//   } else {
+//     console.log(`Sua senha contem ${contagem} caracteres.\nSenha Aceita`);
+//   }
+// }
+// senha = prompt("Digite sua senha:");
+// contarLetras(senha);
+
+//4.
+// let calc = 0;
+// function somarArray(precos) {
+//   for (let i = 0; i < precos.length; i++) {
+//     calc += precos[i];
+//   }
+//   return calc;
+// }
+
+// const precos = [10, 20, 30, 40, 50];
+// console.log(somarArray(precos));
+
+//5.
+// function converterMetrosParaCentimetros(alturaM) {
+//   return alturaM * 100;
+// }
+// alturaM = prompt("Digite sua Altura em Metros: ");
+// console.log(
+//   `A altura ${alturaM}m em centímetros é: ${converterMetrosParaCentimetros(
+//     alturaM
+//   )}cm.`
+// );
+
+//6.
+// let media = 0;
+// let calc = 0;
+// function avaliarTreinos(nivelDificuldade) {
+//   for (i = 0; i < nivelDificuldade.length; i++) {
+//     calc += nivelDificuldade[i];
+//   }
+//   return (media = calc / nivelDificuldade.length);
+// }
+
+// let nivelDificuldade = [1, 2, 3, 4, 5];
+// console.log(avaliarTreinos(nivelDificuldade));
+
+//7.
+let disponivel = [];
+function controlarVagas(horarios, alunos) {
+  for (let i = 0; i < alunos.length; i++) {
+    console.log(alunos[i]);
+    if (alunos[i] < 20) {
+      console.log(alunos[i]);
+      disponivel.push(horarios[i], alunos[i]);
+      console.log(disponivel);
+    }
+  }
+  return disponivel;
+}
+horarios = [13, 14, 15, 16];
+alunos = [10, 11, 12, 22];
+
+console.log(controlarVagas(horarios, alunos));
