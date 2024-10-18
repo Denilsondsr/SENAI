@@ -282,20 +282,24 @@ const prompt = require("prompt-sync")();
 // let nivelDificuldade = [1, 2, 3, 4, 5];
 // console.log(avaliarTreinos(nivelDificuldade));
 
-//7.
-let disponivel = [];
-function controlarVagas(horarios, alunos) {
-  for (let i = 0; i < alunos.length; i++) {
-    console.log(alunos[i]);
-    if (alunos[i] < 20) {
-      console.log(alunos[i]);
-      disponivel.push(horarios[i], alunos[i]);
-      console.log(disponivel);
-    }
-  }
-  return disponivel;
-}
-horarios = [13, 14, 15, 16];
-alunos = [10, 11, 12, 22];
+// 7
+// let disponivelHorario = [];
+// let disponivelVagas = [];
+// let vagas = 20;
+// let calculo = 0;
+// function controlarVagas(horarios, alunos) {
+//   for (let i = 0; i < alunos.length; i++) {
+//     if (alunos[i] < 20) {
+//       calculo = vagas - alunos[i];
+//       disponivelHorario.push(horarios[i]);
+//       disponivelVagas.push(calculo);
+//     }
+//   }
+//   return disponivelHorario;
+// }
+// horarios = [13, 14, 15, 16];
+// alunos = [10, 11, 12, 22];
 
-console.log(controlarVagas(horarios, alunos));
+// let resultado = controlarVagas(horarios, alunos);
+
+// console.log(resultado);
