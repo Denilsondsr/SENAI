@@ -216,7 +216,7 @@
 // EXERCÍCIO 20
 
 // ----------------------------------------
-const prompt = require("prompt-sync")();
+//const prompt = require("prompt-sync")();
 //1.
 // function saudar(nome) {
 //   console.log(`Bora treinar ${nome}, Seu Frango!`);
@@ -303,3 +303,108 @@ const prompt = require("prompt-sync")();
 // let resultado = controlarVagas(horarios, alunos);
 
 // console.log(resultado);
+// ----------------------------------------
+
+// JAVASCRIPT - AULA 06 - ESTRUTURAS CONDICIONAIS
+
+// ----------------------------------------
+// ----------------------------------------
+
+// EXERCÍCIO 21
+
+// ----------------------------------------
+const prompt = require("prompt-sync")();
+//1.
+// const num = -1;
+// if (num == 0) {
+//   console.log("Número é Zero.");
+// } else if (num > 0) {
+//   console.log("Número é Positivo.");
+// } else {
+//   console.log("Número é Negativo.");
+// }
+
+//2.
+// const idade = 8;
+// if (idade >= 18) {
+//   console.log("Pode se Inscrever");
+// } else {
+//   console.log("Menor de Idade, Não Pode se Inscrever");
+// }
+
+//3.
+// const valorProduto = 150;
+// let calc = 0;
+// if (valorProduto > 100) {
+//   calc = valorProduto * 0.9;
+//   console.log(calc);
+// } else {
+//   console.log("Valor minimo para desconto não atingido.")
+// }
+// const notaAluno = 40;
+
+//4.
+// if (notaAluno >= 70) {
+//   console.log("Aprovado");
+// } else if (notaAluno < 50) {
+//   console.log("Reprovado");
+// } else {
+//   console.log("Recuperação");
+// }
+
+//5.
+// let resultImc = 0;
+// function imc(peso, altura) {
+//   return peso / (altura * altura);
+// }
+// peso = prompt("Digite seu peso:");
+// altura = prompt("Digite sua altura:");
+
+// resultImc = imc(peso, altura);
+
+// if (resultImc < 18.5) {
+//   console.log("Abaixo do Peso");
+//   console.log(resultImc.toFixed(2));
+// } else if (resultImc >= 18.5 && resultImc <= 24.9) {
+//   console.log("Peso Normal");
+//   console.log(resultImc.toFixed(2));
+// } else if (resultImc >= 25 && resultImc <= 29.9) {
+//   console.log("Sobrepeso");
+//   console.log(resultImc.toFixed(2));
+// } else if (resultImc >= 30 && resultImc <= 34.9) {
+//   console.log("Obesidade GRAU 1");
+//   console.log(resultImc.toFixed(2));
+// } else if (resultImc >= 35 && resultImc <= 39.9) {
+//   console.log("Obesidade GRAU 2");
+//   console.log(resultImc.toFixed(2));
+// } else {
+//   console.log("Obesidade GRAU 3");
+//   console.log(resultImc.toFixed(2));
+// }
+const idade = 18;
+const rendaMensal = 200;
+const nomeLimpo = false;
+
+if (idade >= 18 && rendaMensal >= 2000 && nomeLimpo == true) {
+  console.log("Emprestimo Aprovado");
+} else if (idade >= 18 && rendaMensal >= 2000 && nomeLimpo == false) {
+  console.log("Emprestimo Reprovado - Nome Sujo");
+} else if (idade >= 18 && rendaMensal <= 2000 && nomeLimpo == true) {
+  console.log("Emprestimo Reprovado - Renda Mensal Menor que R$2000");
+} else if (idade < 18 && rendaMensal >= 2000 && nomeLimpo == true) {
+  console.log("Emprestimo Reprovado - Menor de Idade");
+} else if (idade >= 18 && rendaMensal <= 2000 && nomeLimpo == false) {
+  console.log(
+    "Emprestimo Reprovado - Renda Mensal Menor que R$2000 e Nome Sujo"
+  );
+} else if (idade < 18 && rendaMensal >= 2000 && nomeLimpo == false) {
+  console.log("Emprestimo Reprovado - Menor de Idade e Nome Sujo");
+} else if (idade < 18 && rendaMensal <= 2000 && nomeLimpo == true) {
+  console.log(
+    "Emprestimo Reprovado - Menor de Idade e Renda Mensal Menor que R$2000"
+  );
+} else {
+  console.log(
+    "Emprestimo Reprovado FUDIDO - Menor de Idade, Renda Mensal Menor que R$2000 e Nome Sujo"
+  );
+}
