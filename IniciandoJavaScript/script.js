@@ -313,7 +313,7 @@
 // EXERCÍCIO 21
 
 // ----------------------------------------
-const prompt = require("prompt-sync")();
+//const prompt = require("prompt-sync")();
 //1.
 // const num = -1;
 // if (num == 0) {
@@ -381,30 +381,150 @@ const prompt = require("prompt-sync")();
 //   console.log("Obesidade GRAU 3");
 //   console.log(resultImc.toFixed(2));
 // }
-const idade = 18;
-const rendaMensal = 200;
-const nomeLimpo = false;
 
-if (idade >= 18 && rendaMensal >= 2000 && nomeLimpo == true) {
-  console.log("Emprestimo Aprovado");
-} else if (idade >= 18 && rendaMensal >= 2000 && nomeLimpo == false) {
-  console.log("Emprestimo Reprovado - Nome Sujo");
-} else if (idade >= 18 && rendaMensal <= 2000 && nomeLimpo == true) {
-  console.log("Emprestimo Reprovado - Renda Mensal Menor que R$2000");
-} else if (idade < 18 && rendaMensal >= 2000 && nomeLimpo == true) {
-  console.log("Emprestimo Reprovado - Menor de Idade");
-} else if (idade >= 18 && rendaMensal <= 2000 && nomeLimpo == false) {
-  console.log(
-    "Emprestimo Reprovado - Renda Mensal Menor que R$2000 e Nome Sujo"
-  );
-} else if (idade < 18 && rendaMensal >= 2000 && nomeLimpo == false) {
-  console.log("Emprestimo Reprovado - Menor de Idade e Nome Sujo");
-} else if (idade < 18 && rendaMensal <= 2000 && nomeLimpo == true) {
-  console.log(
-    "Emprestimo Reprovado - Menor de Idade e Renda Mensal Menor que R$2000"
-  );
-} else {
-  console.log(
-    "Emprestimo Reprovado FUDIDO - Menor de Idade, Renda Mensal Menor que R$2000 e Nome Sujo"
-  );
-}
+//6.
+// const idade = 18;
+// const rendaMensal = 200;
+// const nomeLimpo = false;
+
+// if (idade >= 18 && rendaMensal >= 2000 && nomeLimpo == true) {
+//   console.log("Emprestimo Aprovado");
+// } else if (idade >= 18 && rendaMensal >= 2000 && nomeLimpo == false) {
+//   console.log("Emprestimo Reprovado - Nome Sujo");
+// } else if (idade >= 18 && rendaMensal <= 2000 && nomeLimpo == true) {
+//   console.log("Emprestimo Reprovado - Renda Mensal Menor que R$2000");
+// } else if (idade < 18 && rendaMensal >= 2000 && nomeLimpo == true) {
+//   console.log("Emprestimo Reprovado - Menor de Idade");
+// } else if (idade >= 18 && rendaMensal <= 2000 && nomeLimpo == false) {
+//   console.log(
+//     "Emprestimo Reprovado - Renda Mensal Menor que R$2000 e Nome Sujo"
+//   );
+// } else if (idade < 18 && rendaMensal >= 2000 && nomeLimpo == false) {
+//   console.log("Emprestimo Reprovado - Menor de Idade e Nome Sujo");
+// } else if (idade < 18 && rendaMensal <= 2000 && nomeLimpo == true) {
+//   console.log(
+//     "Emprestimo Reprovado - Menor de Idade e Renda Mensal Menor que R$2000"
+//   );
+// } else {
+//   console.log(
+//     "Emprestimo Reprovado FUDIDO - Menor de Idade, Renda Mensal Menor que R$2000 e Nome Sujo"
+//   );
+// }
+
+//7.
+
+// ----------------------------------------
+
+// JAVASCRIPT - AULA 07 - ESTRUTURAS DE REPETIÇÃO
+
+// ----------------------------------------
+// ----------------------------------------
+
+// EXERCÍCIO 22
+
+// ----------------------------------------
+//const prompt = require("prompt-sync")();
+//1.
+
+// for (let i = 10; i >= 1; i--) {
+//   console.log(i);
+// }
+
+//2.
+// for (let i = 0; i <= 20; i++) {
+//   if (i % 2 == 0 && i > 0) {
+//     console.log(i);
+//   }
+// }
+
+//3.
+
+// let idadeUser;
+// let idadeUserVerificado;
+// let verificacao = false;
+// do {
+//   idadeUser = prompt("Digite sua idade:");
+//   idadeUserVerificado = parseInt(idadeUser);
+//   // isNaN retirna True ou False
+//   // False se realmente for número
+//   // True se for qualquer outra coisa Ex. String
+//   if (
+//     isNaN(idadeUserVerificado) ||
+//     idadeUserVerificado <= 0 ||
+//     idadeUserVerificado >= 120
+//   ) {
+//     console.log("Idade Error.");
+//   }
+//   verificacao = true;
+// } while (
+//   isNaN(idadeUserVerificado) ||
+//   idadeUserVerificado <= 0 ||
+//   idadeUserVerificado >= 120
+// );
+// if (verificacao) {
+//   console.log("Idade Correta, Cadastro concluido.");
+// }
+
+//4.
+// const prompt = require("prompt-sync")();
+// let depositos = [];
+// let verificacao = true;
+// let aux;
+// let i = 0;
+// let soma = 0;
+// do {
+//   aux = parseInt(prompt("Digite o valor do Depósito: "));
+//   if (isNaN(aux)) {
+//     console.log("Valor Incorreto.");
+//     verificacao = false;
+//   } else if (aux > 0) {
+//     depositos[i] = aux;
+//     i += 1;
+//   } else {
+//     verificacao = false;
+//   }
+//   // Enquanto o While for TRUE continua rodando
+//   // Se for FALSE, finaliza
+// } while (verificacao);
+
+// for (let i = 0; i < depositos.length; i++) {
+//   soma += depositos[i];
+// }
+// console.log(soma);
+
+//5.
+// const prompt = require("prompt-sync")();
+// let numeroUser;
+// numeroUser = parseInt(prompt("Digite um número para fazer a Tabuada:"));
+
+// if (isNaN(numeroUser)) {
+//   console.log("Número Incorreto.");
+// } else {
+//   for (let i = 0; i <= 10; i++) {
+//     let calculo = numeroUser * i;
+//     console.log(`${numeroUser} X ${i} = ${calculo}`);
+//   }
+// }
+
+//6.
+
+// let idade;
+// let idadeNumero;
+
+// // Loop para garantir que o usuário insira um número
+// do {
+//   idade = prompt("Digite sua idade: ");
+
+//   // Verifica se o valor inserido é um número válido
+//   idadeNumero = parseInt(idade);
+//   console.log(isNaN(idadeNumero));
+
+//   if (isNaN(idadeNumero) || idadeNumero <= 0) {
+//     console.log("Por favor, insira um número válido.");
+//   }
+// } while (isNaN(idadeNumero) || idadeNumero <= 0);
+
+// const anoAtual = new Date().getFullYear();
+// const anoNascimento = anoAtual - idadeNumero;
+
+// console.log(`Você nasceu no ano de ${anoNascimento}.`);
