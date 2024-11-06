@@ -26,7 +26,7 @@ except Exception as e:
 
 # CREATE: Inserção de um novo aluno
 string_sql = """
-INSERT INTO Aluno (AlunoID, NomeAluno) VALUES (4, 'Ana Souza')
+INSERT INTO Aluno (NomeAluno) VALUES ('Ana Souza')
 """
 cursor.execute(string_sql)
 conn.commit()
@@ -57,8 +57,10 @@ conn.commit()
 
 # DELETE: Deletar um aluno específico, por exemplo, AlunoID = 1
 string_sql = """
+DELETE FROM emprestimos WHERE AlunoID = 1
 DELETE FROM Aluno WHERE AlunoID = 1
 """
+
 cursor.execute(string_sql)
 conn.commit()
 
@@ -67,7 +69,7 @@ conn.commit()
 
 # CREATE: Inserção de um novo livro
 string_sql = """
-INSERT INTO Livro (LivroID, NomeLivro) VALUES (4, 'Matemática Avançada')
+INSERT INTO Livro (NomeLivro) VALUES ('Matemática Avançada')
 """
 cursor.execute(string_sql)
 conn.commit()
@@ -98,6 +100,7 @@ conn.commit()
 
 # DELETE: Deletar um livro específico, por exemplo, LivroID = 1
 string_sql = """
+DELETE FROM AvaliacoesLivros WHERE LivroID = 1
 DELETE FROM Livro WHERE LivroID = 1
 """
 cursor.execute(string_sql)
