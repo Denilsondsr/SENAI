@@ -508,23 +508,4 @@
 
 //6.
 
-// let idade;
-// let idadeNumero;
-
-// // Loop para garantir que o usuário insira um número
-// do {
-//   idade = prompt("Digite sua idade: ");
-
-//   // Verifica se o valor inserido é um número válido
-//   idadeNumero = parseInt(idade);
-//   console.log(isNaN(idadeNumero));
-
-//   if (isNaN(idadeNumero) || idadeNumero <= 0) {
-//     console.log("Por favor, insira um número válido.");
-//   }
-// } while (isNaN(idadeNumero) || idadeNumero <= 0);
-
-// const anoAtual = new Date().getFullYear();
-// const anoNascimento = anoAtual - idadeNumero;
-
-// console.log(`Você nasceu no ano de ${anoNascimento}.`);
+//7.

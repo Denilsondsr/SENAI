@@ -1,64 +1,194 @@
-function limpa_formulário_cep() {
-  //Limpa valores do formulário de cep.
-  document.getElementById("rua").value = "";
-  document.getElementById("bairro").value = "";
-  document.getElementById("cidade").value = "";
-  document.getElementById("uf").value = "";
-  document.getElementById("ibge").value = "";
-}
+let products = [];
+let cart = [];
 
-function meu_callback(conteudo) {
-  if (!("erro" in conteudo)) {
-    //Atualiza os campos com os valores.
-    document.getElementById("rua").value = conteudo.logradouro;
-    document.getElementById("bairro").value = conteudo.bairro;
-    document.getElementById("cidade").value = conteudo.localidade;
-    document.getElementById("uf").value = conteudo.uf;
-    document.getElementById("ibge").value = conteudo.ibge;
-  } //end if.
-  else {
-    //CEP não Encontrado.
-    limpa_formulário_cep();
-    alert("CEP não encontrado.");
-  }
-}
+const selectors = {
+  products: document.querySelector(".products"),
+  cartBtn: document.querySelector(".cart-btn"),
+  cartQty: document.querySelector(".cart-qty"),
+  cartClose: document.querySelector(".cart-close"),
+  cart: document.querySelector(".cart"),
+  cartOverlay: document.querySelector(".cart-overlay"),
+  cartClear: document.querySelector(".cart-clear"),
+  cartBody: document.querySelector(".cart-body"),
+  cartTotal: document.querySelector(".cart-total"),
+};
 
-function pesquisacep(valor) {
-  //Nova variável "cep" somente com dígitos.
-  var cep = valor.replace(/\D/g, "");
+const setupListeners = () => {
+  document.addEventListener("DOMContentLoaded", initStore);
 
-  //Verifica se campo cep possui valor informado.
-  if (cep != "") {
-    //Expressão regular para validar o CEP.
-    var validacep = /^[0-9]{8}$/;
+  selectors.products.addEventListener("click", addToCart);
+  selectors.cartBtn.addEventListener("click", showCart);
+  selectors.cartOverlay.addEventListener("click", hideCart);
+  selectors.cartClose.addEventListener("click", hideCart);
+  selectors.cartBody.addEventListener("click", updateCart);
+  selectors.cartClear.addEventListener("click", clearCart);
+};
 
-    //Valida o formato do CEP.
-    if (validacep.test(cep)) {
-      //Preenche os campos com "..." enquanto consulta webservice.
-      document.getElementById("logradouro").value = "...";
-      document.getElementById("bairro").value = "...";
-      document.getElementById("cidade").value = "...";
-      document.getElementById("uf").value = "...";
-      document.getElementById("ibge").value = "...";
+const initStore = () => {
+  loadCart();
+  loadProducts("https://fakestoreapi.com/products")
+    .then(renderProducts)
+    .finally(renderCart);
+};
 
-      //Cria um elemento javascript.
-      var script = document.createElement("script");
+const showCart = () => {
+  selectors.cart.classList.add("show");
+  selectors.cartOverlay.classList.add("show");
+};
 
-      //Sincroniza com o callback.
-      script.src =
-        "https://viacep.com.br/ws/" + cep + "/json/?callback=meu_callback";
+const hideCart = () => {
+  selectors.cart.classList.remove("show");
+  selectors.cartOverlay.classList.remove("show");
+};
 
-      //Insere script no documento e carrega o conteúdo.
-      document.body.appendChild(script);
-    } //end if.
-    else {
-      //cep é inválido.
-      limpa_formulário_cep();
-      alert("Formato de CEP inválido.");
+const clearCart = () => {
+  cart = [];
+  saveCart();
+  renderCart();
+  renderProducts();
+  setTimeout(hideCart, 500);
+};
+
+const addToCart = (e) => {
+  if (e.target.hasAttribute("data-id")) {
+    const id = parseInt(e.target.dataset.id);
+    const inCart = cart.find((x) => x.id === id);
+
+    if (inCart) {
+      alert("Item is already in cart.");
+      return;
     }
-  } //end if.
-  else {
-    //cep sem valor, limpa formulário.
-    limpa_formulário_cep();
+
+    cart.push({ id, qty: 1 });
+    saveCart();
+    renderProducts();
+    renderCart();
+    showCart();
   }
-}
+};
+
+const removeFromCart = (id) => {
+  cart = cart.filter((x) => x.id !== id);
+
+  cart.length === 0 && setTimeout(hideCart, 500);
+  renderProducts();
+};
+
+const increaseQty = (id) => {
+  const item = cart.find((x) => x.id === id);
+  if (!item) return;
+  item.qty++;
+};
+
+const decreaseQty = (id) => {
+  const item = cart.find((x) => x.id === id);
+  if (!item) return;
+  item.qty--;
+  if (item.qty === 0) removeFromCart(id);
+};
+
+const updateCart = (e) => {
+  if (e.target.hasAttribute("data-btn")) {
+    const cartItem = e.target.closest(".cart-item");
+    const id = parseInt(cartItem.dataset.id);
+    const btn = e.target.dataset.btn;
+
+    btn === "incr" && increaseQty(id);
+    btn === "decr" && decreaseQty(id);
+
+    saveCart();
+    renderCart();
+  }
+};
+
+const saveCart = () => {
+  localStorage.setItem("online-store", JSON.stringify(cart));
+};
+
+const loadCart = () => {
+  cart = JSON.parse(localStorage.getItem("online-store")) || [];
+};
+
+const renderCart = () => {
+  const cartQty = cart.reduce((sum, item) => sum + item.qty, 0);
+  selectors.cartQty.textContent = cartQty;
+  selectors.cartQty.classList.toggle("visible", cartQty);
+
+  selectors.cartTotal.textContent = calculateTotal().format();
+
+  if (cart.length === 0) {
+    selectors.cartBody.innerHTML =
+      '<div class="cart-empty">Your cart is empty.</div>';
+    return;
+  }
+
+  selectors.cartBody.innerHTML = cart
+    .map(({ id, qty }) => {
+      const product = products.find((x) => x.id === id);
+      const { title, image, price } = product;
+      const amount = price * qty;
+      return `
+      <div class="cart-item" data-id="${id}">
+        <img src="${image}" alt="${title}" />
+        <div class="cart-item-detail">
+          <h3>${title}</h3>
+          <h5>${price.format()}</h5>
+          <div class="cart-item-amount">
+            <i class="bi bi-dash-lg" data-btn="decr"></i>
+            <span class="qty">${qty}</span>
+            <i class="bi bi-plus-lg" data-btn="incr"></i>
+            <span class="cart-item-price">${amount.format()}</span>
+          </div>
+        </div>
+      </div>`;
+    })
+    .join("");
+};
+
+const renderProducts = () => {
+  selectors.products.innerHTML = products
+    .map((product) => {
+      const { id, title, image, price } = product;
+      const inCart = cart.find((x) => x.id === id);
+      const disabled = inCart ? "disabled" : "";
+      const text = inCart ? "Added in Cart" : "Add to Cart";
+
+      return `
+    <div class="product">
+      <img src="${image}" alt="${title}" />
+      <h3>${title}</h3>
+      <h5>${price.format()}</h5>
+      <button ${disabled} data-id=${id}>${text}</button>
+    </div>`;
+    })
+    .join("");
+};
+
+const loadProducts = async (apiURL) => {
+  try {
+    const response = await fetch(apiURL);
+    if (!response.ok) throw new Error(`http error! status=${response.status}`);
+    products = await response.json();
+    console.log(products);
+  } catch (error) {
+    console.error("fetch error:", error);
+  }
+};
+
+const calculateTotal = () => {
+  return cart
+    .map(({ id, qty }) => {
+      const { price } = products.find((x) => x.id === id);
+      return qty * price;
+    })
+    .reduce((sum, number) => sum + number, 0);
+};
+
+Number.prototype.format = function () {
+  return this.toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+};
+
+setupListeners();
