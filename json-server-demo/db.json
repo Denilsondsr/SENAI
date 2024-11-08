@@ -72,6 +72,17 @@
       "discount": {
         "type": "shipping"
       }
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "name": "Novo Produto",
+      "price": 100,
+      "id": 13
     }
   ],
   "reviews": [
