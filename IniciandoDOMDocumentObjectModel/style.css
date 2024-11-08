@@ -8,4 +8,39 @@ body {
   font-size: 1rem;
 }
 .container {
+  background-color: green;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1%;
+  gap: 10px 25px;
+  grid-template-areas:
+    "header header header"
+    "caixa1 caixa2 caixa3"
+    "caixa4 caixa4 caixa5";
+}
+.header {
+  justify-items: center;
+  grid-area: header;
+  background-color: aqua;
+}
+.caixa {
+  justify-items: center;
+  background-color: brown;
+}
+.caixa1 {
+  grid-area: caixa1;
+}
+.caixa2 {
+  grid-area: caixa2;
+}
+.caixa3 {
+  grid-area: caixa3;
+}
+.caixa4 {
+  grid-area: caixa4;
+}
+.caixa5 {
+  grid-area: caixa5;
 }

@@ -11,8 +11,27 @@
     <div class="container">
       <div class="header"><h1>Escalação Brasileira</h1></div>
       <div class="caixa caixa1"><p>Relação de Jogadores</p></div>
-      <div class="caixa caixa2"><p>Escalar Time</p></div>
-      <div class="caixa caixa3"><p>Remover Jogador</p></div>
+      <div class="caixa caixa2">
+        <p>Escalar Time</p>
+        <form>
+          <label for="numero">Número:</label>
+          <input id="numero" name="numero" required="" />
+          <p></p>
+          <label for="nome">Nome:</label>
+          <input id="nome" name="nome" required="" type="text" />
+          <p></p>
+          <button name="btnEscalar" type="submit">Escalar!</button>
+        </form>
+      </div>
+      <div class="caixa caixa3">
+        <p>Remover Jogador</p>
+        <form>
+          <label for="numero">Número:</label>
+          <input id="numero" name="numero" required="" />
+          <p></p>
+          <button name="btnRemover" type="submit">Tirar de Campo!</button>
+        </form>
+      </div>
       <div class="caixa caixa4"><p>Time em Campo</p></div>
       <div class="caixa caixa5"><p>Jogador Removido</p></div>
     </div>
