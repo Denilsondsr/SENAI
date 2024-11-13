@@ -1,13 +1,19 @@
-let relacaoJogadores = [
-  { numero: 1, nome: Denilson },
-  { numero: 2, nome: Adriana },
+const relacaoJogadores = [
+  { id: 1, numero: 1, nome: "Denilson" },
+  { id: 2, numero: 2, nome: "Adriana" },
 ];
 
 let relacaoJogadoresEscalado = [];
 let relacaoJogadoresRemovidos = [];
 
-let btnEscalar = document.getElementsByName("btnEscalar");
+function imprimirJogadores() {
+  const mostrarJogadores = document.getElementById("mostrarJogadores");
 
-btnEscalar.onfocus = function () {
-  console.log("FOCO");
-};
+  relacaoJogadores.forEach((jogador) => {
+    const jogadorDiv = document.createElement("div");
+    jogadorDiv.innerHTML = `<span>${jogador.numero} - ${jogador.nome}</span>`;
+    mostrarJogadores.appendChild(jogadorDiv);
+  });
+}
+
+imprimirJogadores();

@@ -1,82 +1,71 @@
-const images = {
-  backgrounds: document.querySelectorAll(".background"),
-  theLastOfUs: [
-    "./assets/imagens/the-last-of-us/tlou-1.jpg",
-    "./assets/imagens/the-last-of-us/tlou-2.jpg",
-    "./assets/imagens/the-last-of-us/tlou-3.jpg",
-    "./assets/imagens/the-last-of-us/tlou-4.jpg",
-    "./assets/imagens/the-last-of-us/tlou-5.jpg",
-    "./assets/imagens/the-last-of-us/tlou-6.jpg",
-  ],
-};
+// Produtos fictícios para o exemplo
+const products = [
+  { id: 1, name: "Produto 1", price: 19.99 },
+  { id: 2, name: "Produto 2", price: 39.99 },
+  { id: 3, name: "Produto 3", price: 29.99 },
+];
+let cart = [];
+function renderProducts() {
+  const productList = document.getElementById("product-list");
+  products.forEach((product) => {
+    const productDiv = document.createElement("div");
+    productDiv.innerHTML = `
+      <span>${product.name} - R$ ${product.price.toFixed(2)}</span>
+      <button onclick="addToCart(${product.id})">Adicionar ao Carrinho</button>
+    `;
+    productList.appendChild(productDiv);
+  });
+}
+function addToCart(productId) {
+  const product = products.find((p) => p.id === productId);
+  const cartItem = cart.find((item) => item.id === productId);
 
-const page = {
-  modal: document.querySelector(".modal"),
-  iframe: document.querySelector("iframe"),
-  btnTrailer: document.querySelector(".trailer"),
-  btnClose: document.querySelector(".button-close"),
-  buttonsCarousel: document.querySelectorAll(".button"),
-  indexOfArrayText: 0,
-  intervalId: null,
+  if (cartItem) {
+    cartItem.quantity++;
+  } else {
+    cart.push({ ...product, quantity: 1 });
+  }
 
-  toggleDisplayModal(value) {
-    this.modal.style.display = value;
-  },
+  renderCart();
+}
+function removeFromCart(productId) {
+  cart = cart.filter((item) => item.id !== productId);
+  renderCart();
+}
+function renderCart() {
+  const cartItemsContainer = document.getElementById("cart-items");
+  cartItemsContainer.innerHTML = "";
 
-  buttonSelected(index) {
-    this.buttonsCarousel.forEach((button) => {
-      button.classList.remove("selected");
-    });
-    this.buttonsCarousel[index].classList.add("selected");
-  },
+  cart.forEach((item) => {
+    const cartItem = document.createElement("li");
+    cartItem.innerHTML = `
+      ${item.name} - R$ ${item.price.toFixed(2)} x ${item.quantity} = R$ ${(
+      item.price * item.quantity
+    ).toFixed(2)}
+      <button onclick="removeFromCart(${item.id})">Remover</button>
+    `;
+    cartItemsContainer.appendChild(cartItem);
+  });
 
-  transitionBackground(value) {
-    images.backgrounds.forEach((currentBackground) => {
-      currentBackground.style.transform = `translateX(${value})`;
-    });
-  },
+  const cartTotal = document.getElementById("cart-total");
+  cartTotal.innerText = calculateTotal().toFixed(2);
+}
+function calculateTotal() {
+  return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+}
+function clearCart() {
+  cart = [];
+  renderCart();
+}
+function checkout() {
+  if (cart.length === 0) {
+    alert("Seu carrinho está vazio!");
+    return;
+  }
 
-  nextImage(index) {
-    this.transitionBackground(`-${index}00%`);
-    this.buttonSelected(index);
-    this.indexOfArrayText = index;
-  },
-
-  automaticBackgroundTransition() {
-    let index = 0;
-
-    // Clear previous interval if exists
-    if (this.intervalId) {
-      clearInterval(this.intervalId);
-    }
-
-    // Start automatic carousel
-    this.intervalId = setInterval(() => {
-      index = (index + 1) % images.theLastOfUs.length; // Loop through images
-      this.nextImage(index);
-    }, 2000);
-  },
-
-  init() {
-    // Modal functionality
-    this.btnTrailer.addEventListener("click", () =>
-      this.toggleDisplayModal("grid")
-    );
-    this.btnClose.addEventListener("click", () =>
-      this.toggleDisplayModal("none")
-    );
-
-    // Manual carousel navigation
-    this.buttonsCarousel.forEach((button, index) => {
-      button.addEventListener("click", () => {
-        clearInterval(this.intervalId); // Stop auto-transition on manual click
-        this.nextImage(index);
-      });
-    });
-
-    // Start automatic transition on page load
-    this.automaticBackgroundTransition();
-  },
-};
-
-page.init();
+  const total = calculateTotal().toFixed(2);
+  alert(`Compra realizada com sucesso! Total: R$ ${total}`);
+  clearCart(); // Esvazia o carrinho após a compra
+}
+renderProducts();
+renderCart();
