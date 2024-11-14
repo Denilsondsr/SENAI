@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LucStore</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- CABEÇALHO -->
+    <header>
+      <img id="icone" src="img/icone.png" alt="" />
+      <span id="cart-count"><strong>0</strong></span>
+      <a href="Carrinho.html"
+        ><img id="carrinho" class="car" src="img/carrinho.png" alt=""
+      /></a>
+    </header>
+
+    <!-- PARTE1  -->
+    <div class="container">
+      <div class="parte1">
+        <img id="bloco1" src="img/parte1.png" alt="" />
+      </div>
+    </div>
+
+    <!-- PRODUTOS -->
+    <div class="container2">
+      <div class="card1">
+        <img class="img" id="produto1" src="img/produto1.jpg" alt="" />
+        <div id="sport">
+          <ul id="textocard">
+            <li>Camiseta de Treino</li>
+            <li id="valor">R$ 39,00</li>
+            <button
+              onclick="adicionarAoCarrinho('Camiseta', 210.00)"
+              data-imagem="img/produto1.jpg"
+            >
+              Adicionar ao Carrinho
+            </button>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card1">
+        <img class="img" id="produto1" src="img/tenis1.jpg" alt="" />
+        <div id="sport">
+          <ul id="textocard">
+            <li>Tênis HRX</li>
+            <li id="valor">R$ 260,00</li>
+            <button
+              onclick="adicionarAoCarrinho('Tenis One', 160.00)"
+              data-imagem="img/tenis1.jpg"
+            >
+              Adicionar ao Carrinho
+            </button>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container3">
+      <div class="card1">
+        <img class="img" id="produto1" src="img/calca.jpg" alt="" />
+        <div id="sport">
+          <ul id="textocard">
+            <li>Calça Moletom</li>
+            <li id="valor">R$ 59,00</li>
+            <button
+              onclick="adicionarAoCarrinho('Calca Moletom', 160.00)"
+              data-imagem="img/calca.jpg"
+            >
+              Adicionar ao Carrinho
+            </button>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card1">
+        <img class="img" id="produto1" src="img/relogio.jpg" alt="" />
+        <div id="sport">
+          <ul id="textocard">
+            <li>Relógio Roadster</li>
+            <li id="valor">R$ 610,00</li>
+            <button
+              onclick="adicionarAoCarrinho('Relogio One', 210.00)"
+              data-imagem="img/relogio.jpg"
+            >
+              Adicionar ao Carrinho
+            </button>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container4">
+      <div class="card1">
+        <img class="img" id="produto1" src="img/tenis2.jpg" alt="" />
+        <div id="sport">
+          <ul id="textocard">
+            <li>Tênis Style</li>
+            <li id="valor">R$ 310,00</li>
+            <button
+              onclick="adicionarAoCarrinho('Tenis Gray', 210.00)"
+              data-imagem="img/tenis2.jpg"
+            >
+              Adicionar ao Carrinho
+            </button>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card1">
+        <img class="img" id="produto1" src="img/relogio2.jpg" alt="" />
+        <div id="sport">
+          <ul id="textocard">
+            <li>Relógio Fossil</li>
+            <li id="valor">R$ 363,00</li>
+            <button
+              onclick="adicionarAoCarrinho('Relogio Black', 63.00)"
+              data-imagem="img/relogio2.jpg"
+            >
+              Adicionar ao Carrinho
+            </button>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- RODAPÉ  -->
+    <footer>
+      <div class="contato">
+        <div class="insta">
+          <img src="img/insta.webp" alt="" />
+          <p>@senaimooca</p>
+        </div>
+        <div class="tele">
+          <img src="img/telefone.webp" alt="" />
+          <p>(11) 99999-9999</p>
+        </div>
+        <div class="ema">
+          <img src="img/email.png" alt="" />
+          <p>seuecommerce@gmail.com</p>
+        </div>
+      </div>
+      <p id="author">&copy; lsfrenzel</p>
+      <div class="logof">
+        <img src="img/icone.png" alt="" />
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

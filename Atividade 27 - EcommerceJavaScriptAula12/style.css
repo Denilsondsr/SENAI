@@ -1,0 +1,279 @@
+/* CABEÇALHO */
+* {
+  margin: 0;
+}
+
+#icone {
+  width: 39vh;
+  margin-top: 2vh;
+  display: flex;
+}
+
+#sobre {
+  text-decoration: none;
+  font-size: 4vh;
+  position: absolute;
+  margin-top: 2.2%;
+  margin-left: 24%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff523b;
+}
+
+#sobre:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(2px 2px 5px #ff523b);
+  transition: transform 0.3s ease;
+}
+
+#carrinho {
+  display: flex;
+  margin-left: 175vh;
+  margin-top: -13vh;
+  width: 15vh;
+  transition: transform 0.3s ease;
+}
+
+#carrinho:hover {
+  filter: drop-shadow(2px 2px 5px #ff523b);
+  transform: scale(1.1);
+}
+
+header {
+  background-color: #a8a8a8;
+  color: #ff523b;
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* PARTE1 */
+#bloco1 {
+  width: 90%;
+  height: 90vh;
+  margin-top: 12vh;
+}
+/* PRODUTOS  */
+.container2,
+.container3,
+.container4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* PRODUTO 1 */
+#produto1 {
+  width: 100%;
+}
+
+.card1 {
+  width: 25%;
+  height: 86vh;
+  background-color: #3a3a3a;
+  margin: 5%;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card1:hover {
+  transform: translateY(-7px);
+}
+
+#textocard {
+  color: #ff523b;
+  font-size: 2.6vh;
+  padding-top: 4vh;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+}
+
+#valor {
+  font-weight: bold;
+  font-size: 3.6vh;
+  color: #ff523b;
+}
+
+button {
+  outline: none;
+  color: #ffffff;
+  padding: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  border: 2px dashed #ff523b;
+  border-radius: 15px;
+  background-color: #444444;
+  box-shadow: 0 0 0 4px #444444, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.1s ease-in-out, 0.4s color;
+  margin-top: 2vh;
+  font-size: 2.6vh;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateX(0.1em) translateY(0.1em);
+  box-shadow: 0 0 0 4px #444444, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #a8a8a8;
+  color: #fff;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+  height: 30vh;
+}
+
+.insta,
+.tele,
+.ema {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.insta {
+  margin-top: 1.5%;
+}
+
+.tele {
+  margin-top: 6%;
+}
+
+.ema {
+  margin-top: 10.5%;
+}
+
+.insta img,
+.tele img,
+.ema img {
+  width: 6vh;
+}
+
+.insta p,
+.tele p,
+.ema p {
+  font-size: 2.5vh;
+  margin-left: 1vh;
+  color: #ff523b;
+}
+
+.logof {
+  position: absolute;
+  display: flex;
+  margin-top: 2%;
+  margin-left: 83%;
+}
+
+.logof img {
+  width: 33vh;
+}
+
+#author {
+  color: #ff523b;
+  margin-left: 90vh;
+  margin-top: 26vh;
+  font-size: 2vh;
+}
+
+/* POPUP */
+#popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #444444;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  height: 215px;
+}
+
+.close {
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #555555;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ff523b;
+}
+
+#imagem {
+  width: 13vh;
+  margin-left: -68%;
+  margin-top: -20%;
+  position: absolute;
+}
+
+.botoespop {
+  width: 600px;
+  margin-top: 20%;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#ir-carrinho {
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #555555;
+  padding: 17px;
+  border-radius: 10px;
+  color: #ff523b;
+}
+
+#ir-carrinho a {
+  text-decoration: none;
+}
+
+#adicionar {
+  position: absolute;
+  margin-top: -18%;
+  margin-left: 8%;
+  font-size: 3.1vh;
+  color: #ff523b;
+}
+
+.car:hover {
+  filter: drop-shadow(2px 2px 5px #ff523b);
+  transform: scale(1.1);
+}
+
+#cart-count {
+  position: absolute;
+  display: flex;
+  margin-left: 187vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #444444;
+  border: 0.4vh solid fffffff;
+  border-radius: 30px;
+  width: 5vh;
+  height: 5vh;
+  color: fffffff;
+  font-size: 2.5vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
